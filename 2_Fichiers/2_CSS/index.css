@@ -1,0 +1,111 @@
+
+@import url("../2_CSS/webfont.css");
+
+body{
+
+  background:linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #999999;
+  background-blend-mode:multiply,multiply;
+  font-family:"hashibaregular";
+  color:#ffffff;
+  font-size:1.5REM;
+  padding:0;
+  margin:0;
+  
+}
+
+main{
+
+  display:flex;
+
+}
+
+nav{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:"mplus_rounded1cblack";
+  color:#000000;
+  font-size:2REM;
+
+}
+
+#btn1{
+
+  background-color:blueviolet;
+
+}
+
+#btn2{
+
+  background-color:blueviolet;
+  
+}
+
+#btn3{
+
+  background-color:blueviolet;
+  
+}
+
+.bloque{
+
+  background-color:blue;
+
+}
+
+#Graphe1{
+
+  background-color:bisque;
+  
+}
+
+#Graphe2{
+
+  background-color:bisque;
+  
+}
+
+#Graphe3{
+
+  background-color:bisque;
+  
+}
+
+p{
+  
+  font-family:"mplus_rounded1cmedium";
+  color:#ffffff;
+  font-size:1.5REM;
+  --pink-lavender:#cdb4dbff;
+  --orchid-pink:#ffc8ddff;
+  --nadeshiko-pink:#ffafccff;
+  --uranian-blue:#bde0feff;
+  --baby-blue-eyes:#a2d2ffff;
+
+  /*
+  $pink-lavender:#cdb4dbff;
+  $orchid-pink:#ffc8ddff;
+  $nadeshiko-pink:#ffafccff;
+  $uranian-blue:#bde0feff;
+  $baby-blue-eyes:#a2d2ffff; 
+  */
+
+}
+
+footer{
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+.Noms{
+
+  background-color:aqua;
+  font-family:"mplus_rounded1cthin";
+  color:#ffffff;
+  font-size:1REM;
+  
+}

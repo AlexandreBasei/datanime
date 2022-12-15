@@ -1,0 +1,40 @@
+
+@font-face{
+    
+    font-family:"hashibaregular";
+    src:url(/1_Sources/0_Polices/2_EnLigne/hashiba-webfont.woff2)format("woff2"),
+        url(/1_Sources/0_Polices/2_EnLigne/hashiba-webfont.woff)format("woff");
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+@font-face{
+    
+    font-family:"mplus_rounded1cthin";
+    src:url(/1_Sources/0_Polices/2_EnLigne/mplusrounded1c-thin-webfont.woff2)format("woff2"),
+        url(/1_Sources/0_Polices/2_EnLigne/mplusrounded1c-thin-webfont.woff)format("woff");
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+@font-face{
+    
+    font-family:"mplus_rounded1cmedium";
+    src:url(/1_Sources/0_Polices/2_EnLigne/mplusrounded1c-medium-webfont.woff2)format("woff2"),
+        url(/1_Sources/0_Polices/2_EnLigne/mplusrounded1c-medium-webfont.woff)format("woff");
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+@font-face{
+    
+    font-family:"mplus_rounded1cblack";
+    src:url(/1_Sources/0_Polices/2_EnLigne/mplusrounded1c-black-webfont.woff2)format("woff2"),
+        url(/1_Sources/0_Polices/2_EnLigne/mplusrounded1c-black-webfont.woff)format("woff");
+    font-weight:normal;
+    font-style:normal;
+
+}
