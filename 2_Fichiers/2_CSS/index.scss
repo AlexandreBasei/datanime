@@ -1,0 +1,136 @@
+@import url("../2_CSS/webfont.css");
+
+html{
+    overflow-x: hidden;
+    height: 1500px;
+    background-color: rgb(60, 59, 59);
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background-color: rgb(152, 32, 32);
+    // background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #999999;
+    background-blend-mode: multiply, multiply;
+    background-repeat: no-repeat;
+    font-family: "hashibaregular";
+    color: #ffffff;
+    font-size: 1.5REM;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 1500px;
+
+    main {
+
+        height : 1500px;
+
+        margin-bottom: 0%;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 1%;
+        }
+
+        nav {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5%;
+            padding-top: 3%;
+            height: 100px;
+
+            .btn {
+
+                background-color: rgb(196, 161, 228);
+                padding: 1.5%;
+                border-radius: 10px;
+                color: #ffffff;
+                font-size: 1.5REM;
+                font-family: "mplus_rounded1cblack";
+                border: none;
+                cursor: pointer;
+                transition: transform 0.3s ease, background-color 0.5s ease;
+            }
+
+            .btn:hover{
+                transform: scale(1.1);
+                background-color: rgb(184, 139, 227);
+            }
+
+        }
+
+        .droite{
+            left: 110%;
+            transition: left 0.8s ease, right 0.8s ease;
+            width: 100%;
+        }
+
+        .gauche{
+            left: -110%;
+            transition: left 0.8s ease, right 0.8s ease;
+            width: 100%;
+        }
+
+        .centre{
+            right: 0%;
+            left: 0%;
+            width: 100%;
+            transition: left 0.8s ease, right 0.8s ease;
+        }
+
+        section {
+
+            position: absolute;
+            height: 1200px;
+
+            h2{
+                text-align: center;
+                margin-top: 0;
+            }
+
+            article {
+
+                display: flex;
+                flex-flow: wrap row;
+                justify-content: center;
+                align-items: center;
+
+                canvas {
+
+                    background-color: bisque;
+                    min-width: 50%;
+                    min-height: 45%;
+
+                }
+
+                p {
+
+                    padding: 1% 25%;
+                    font-family: "mplus_rounded1cmedium";
+                    color: #ffffff;
+                    font-size: 1.5REM;
+                    --pink-lavender: #cdb4dbff;
+                    --orchid-pink: #ffc8ddff;
+                    --nadeshiko-pink: #ffafccff;
+                    --uranian-blue: #bde0feff;
+                    --baby-blue-eyes: #a2d2ffff;
+
+                    /*
+                  $pink-lavender:#cdb4dbff;
+                  $orchid-pink:#ffc8ddff;
+                  $nadeshiko-pink:#ffafccff;
+                  $uranian-blue:#bde0feff;
+                  $baby-blue-eyes:#a2d2ffff; 
+                  */
+
+                }
+
+            }
+
+        }
+    }
+
+}

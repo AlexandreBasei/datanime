@@ -1,88 +1,100 @@
-
 @import url("../2_CSS/webfont.css");
-
-body{
-
-  background:linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #999999;
-  background-blend-mode:multiply,multiply;
-  font-family:"hashibaregular";
-  color:#ffffff;
-  font-size:1.5REM;
-  padding:0;
-  margin:0;
-  
+html {
+  overflow-x: hidden;
+  height: 1500px;
+  background-color: rgb(60, 59, 59);
+  padding: 0;
+  margin: 0;
 }
 
-main{
-
-  display:flex;
-
+body {
+  background-color: rgb(152, 32, 32);
+  background-blend-mode: multiply, multiply;
+  background-repeat: no-repeat;
+  font-family: "hashibaregular";
+  color: #ffffff;
+  font-size: 1.5REM;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  height: 1500px;
 }
-
-nav{
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-family:"mplus_rounded1cblack";
-  color:#000000;
-  font-size:2REM;
-
+body main {
+  height: 1500px;
+  margin-bottom: 0%;
 }
-
-#btn1{
-
-  background-color:blueviolet;
-
+body main h1 {
+  text-align: center;
+  margin-bottom: 1%;
 }
-
-#btn2{
-
-  background-color:blueviolet;
-  
+body main nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  padding-top: 3%;
+  height: 100px;
 }
-
-#btn3{
-
-  background-color:blueviolet;
-  
+body main nav .btn {
+  background-color: rgb(196, 161, 228);
+  padding: 1.5%;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.5REM;
+  font-family: "mplus_rounded1cblack";
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.5s ease;
 }
-
-.bloque{
-
-  background-color:blue;
-
+body main nav .btn:hover {
+  transform: scale(1.1);
+  background-color: rgb(184, 139, 227);
 }
-
-#Graphe1{
-
-  background-color:bisque;
-  
+body main .droite {
+  left: 110%;
+  transition: left 0.8s ease, right 0.8s ease;
+  width: 100%;
 }
-
-#Graphe2{
-
-  background-color:bisque;
-  
+body main .gauche {
+  left: -110%;
+  transition: left 0.8s ease, right 0.8s ease;
+  width: 100%;
 }
-
-#Graphe3{
-
-  background-color:bisque;
-  
+body main .centre {
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  transition: left 0.8s ease, right 0.8s ease;
 }
-
-p{
-  
-  font-family:"mplus_rounded1cmedium";
-  color:#ffffff;
-  font-size:1.5REM;
-  --pink-lavender:#cdb4dbff;
-  --orchid-pink:#ffc8ddff;
-  --nadeshiko-pink:#ffafccff;
-  --uranian-blue:#bde0feff;
-  --baby-blue-eyes:#a2d2ffff;
-
+body main section {
+  position: absolute;
+  height: 1200px;
+}
+body main section h2 {
+  text-align: center;
+  margin-top: 0;
+}
+body main section article {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+body main section article canvas {
+  background-color: bisque;
+  min-width: 50%;
+  min-height: 45%;
+}
+body main section article p {
+  padding: 1% 25%;
+  font-family: "mplus_rounded1cmedium";
+  color: #ffffff;
+  font-size: 1.5REM;
+  --pink-lavender: #cdb4dbff;
+  --orchid-pink: #ffc8ddff;
+  --nadeshiko-pink: #ffafccff;
+  --uranian-blue: #bde0feff;
+  --baby-blue-eyes: #a2d2ffff;
   /*
   $pink-lavender:#cdb4dbff;
   $orchid-pink:#ffc8ddff;
@@ -90,22 +102,4 @@ p{
   $uranian-blue:#bde0feff;
   $baby-blue-eyes:#a2d2ffff; 
   */
-
-}
-
-footer{
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-}
-
-.Noms{
-
-  background-color:aqua;
-  font-family:"mplus_rounded1cthin";
-  color:#ffffff;
-  font-size:1REM;
-  
-}
+}/*# sourceMappingURL=index.css.map */
