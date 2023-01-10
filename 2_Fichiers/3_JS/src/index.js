@@ -77,31 +77,4 @@ document.addEventListener('DOMContentLoaded',function(){
                 page = 1;
             }
         });
-
-        const settings ={
-            "asunc" : true,
-            "crossDomain" : true,
-            "method" : "GET",
-            headers:{
-
-            }
-        };
-
-        const settings2 ={
-            "asunc" : true,
-            "crossDomain" : true,
-            "method" : "GET",
-            headers:{
-
-            }
-        };
-
-        const settings3 ={
-            "asunc" : true,
-            "crossDomain" : true,
-            "method" : "GET",
-            headers:{
-
-            }
-        };
 });
