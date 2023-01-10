@@ -248,14 +248,22 @@ document.addEventListener('DOMContentLoaded', function () {
 				],
 			},
 			options: {
+				legend: {
+					labels: {
+						color: 'white'
+					}
+				},
 				scales: {
-					yAxes: [
-						{
-							ticks: {
-								beginAtZero: true,
-							},
-						},
-					],
+					x: {
+						ticks: {
+							color: 'white'
+						}
+					},
+					y: {
+						ticks: {
+							color: 'white'
+						}
+					},
 				},
 			},
 		});
