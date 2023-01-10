@@ -1,61 +1,24 @@
 
 @font-face{
-<<<<<<< HEAD
-    
-    font-family:"hashibaregular";
-    src:url(../../1_Sources/0_Polices/2_EnLigne/hashiba-webfont.woff2)format("woff2"),
-        url(../../1_Sources/0_Polices/2_EnLigne/hashiba-webfont.woff)format("woff");
-    font-weight:normal;
-    font-style:normal;
-=======
 
     font-family:"Hashiba";
     src:url("../../1_Sources/1_Polices/2_EnLigne/hashiba-webfont.woff2") format("woff2"),
         url("../../1_Sources/1_Polices/2_EnLigne/hashiba-webfont.woff") format("woff");
->>>>>>> b1af65055e1169dc16fdcd8d2bf3fe249d9ef4ef
 
 }
 
 @font-face{
-<<<<<<< HEAD
-    
-    font-family:"mplus_rounded1cthin";
-    src:url(../../1_Sources/0_Polices/2_EnLigne/mplusrounded1c-thin-webfont.woff2)format("woff2"),
-        url(../../1_Sources/0_Polices/2_EnLigne/mplusrounded1c-thin-webfont.woff)format("woff");
-    font-weight:normal;
-    font-style:normal;
-=======
 
     font-family:"MPLUSRounded1C Light";
     src:url("../../1_Sources/1_Polices/2_EnLigne/MPLUSRounded1c-Light.woff2") format("woff2"),
         url("../../1_Sources/1_Polices/2_EnLigne/MPLUSRounded1c-Light.woff") format("woff");
->>>>>>> b1af65055e1169dc16fdcd8d2bf3fe249d9ef4ef
 
 }
 
 @font-face{
-<<<<<<< HEAD
-    
-    font-family:"mplus_rounded1cmedium";
-    src:url(../../1_Sources/0_Polices/2_EnLigne/mplusrounded1c-medium-webfont.woff2)format("woff2"),
-        url(../../1_Sources/0_Polices/2_EnLigne/mplusrounded1c-medium-webfont.woff)format("woff");
-    font-weight:normal;
-    font-style:normal;
-
-}
-
-@font-face{
-    
-    font-family:"mplus_rounded1cblack";
-    src:url(../../1_Sources/0_Polices/2_EnLigne/mplusrounded1c-black-webfont.woff2)format("woff2"),
-        url(../../1_Sources/0_Polices/2_EnLigne/mplusrounded1c-black-webfont.woff)format("woff");
-    font-weight:normal;
-    font-style:normal;
-=======
 
     font-family:"MPLUSRounded1C Medium";
     src:url("../../1_Sources/1_Polices/2_EnLigne/MPLUSRounded1c-Medium.woff2") format("woff2"),
         url("../../1_Sources/1_Polices/2_EnLigne/MPLUSRounded1c-Medium.woff") format("woff");
->>>>>>> b1af65055e1169dc16fdcd8d2bf3fe249d9ef4ef
 
 }

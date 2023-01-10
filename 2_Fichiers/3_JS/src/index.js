@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	var page = 1;
 
 
-	$("#btn3").click(function () {
+	$("#Troisieme").click(function () {
 
 		if (page == 2) {
 			// $("#section2").show();
@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('centre');
 			$("#section3").addClass('centre');
 			$("#section3").removeClass('droite');
+			$("body").addClass('troisieme');
+			$("body").removeClass('deuxieme');
 			window.scrollTo(0, 0);
 			page = 3;
 		}
@@ -26,13 +28,15 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").hide();
 			$("#section2").addClass('gauche');
 			$("#section2").removeClass('droite');
+			$("body").addClass('troisieme');
+			$("body").removeClass('premier');
 			window.scrollTo(0, 0);
 			page = 3;
 		}
 
 	});
 
-	$("#btn2").click(function () {
+	$("#Deuxieme").click(function () {
 
 		if (page == 3) {
 			$("#section2").show();
@@ -40,6 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section3").addClass('droite');
 			$("#section2").addClass('centre');
 			$("#section2").removeClass('gauche');
+			$("body").addClass('deuxieme');
+			$("body").removeClass('troisieme');
 			window.scrollTo(0, 0);
 			page = 2;
 		}
@@ -51,13 +57,16 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('gauche');
 			$("#section1").addClass('gauche');
 			$("#section1").removeClass('centre');
+			$("body").addClass('deuxieme');
+			$("body").removeClass('premier');
 			window.scrollTo(0, 0);
 			page = 2;
 		}
 
+
 	});
 
-	$("#btn1").click(function () {
+	$("#Premier").click(function () {
 
 		if (page == 3) {
 			$("#section3").addClass('droite');
@@ -67,6 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('gauche');
 			$("#section1").addClass('centre');
 			$("#section1").removeClass('gauche');
+			$("body").addClass('premier');
+			$("body").removeClass('troisieme');
 			window.scrollTo(0, 0);
 			page = 1;
 		}
@@ -77,6 +88,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('centre');
 			$("#section1").addClass('centre');
 			$("#section1").removeClass('gauche');
+			$("body").addClass('premier');
+			$("body").removeClass('deuxieme');
 			window.scrollTo(0, 0);
 			page = 1;
 		}
