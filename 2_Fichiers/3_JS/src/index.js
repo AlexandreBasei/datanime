@@ -4,9 +4,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	'use strict';
 
 	var page = 1;
+	console.log(page);
 
 
-	$("#btn3").click(function () {
+	$("#Troisieme").click(function () {
+		console.log(page);
 
 		if (page == 2) {
 			// $("#section2").show();
@@ -32,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	});
 
-	$("#btn2").click(function () {
+	$("#Deuxieme").click(function () {
+		console.log(page);
 
 		if (page == 3) {
 			$("#section2").show();
@@ -57,7 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	});
 
-	$("#btn1").click(function () {
+	$("#Premier").click(function () {
+		console.log(page);
 
 		if (page == 3) {
 			$("#section3").addClass('droite');
