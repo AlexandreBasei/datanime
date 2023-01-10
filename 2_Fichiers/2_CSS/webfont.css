@@ -1,0 +1,24 @@
+
+@font-face{
+
+    font-family:"Hashiba";
+    src:url("../../1_Sources/1_Polices/2_EnLigne/hashiba-webfont.woff2") format("woff2"),
+        url("../../1_Sources/1_Polices/2_EnLigne/hashiba-webfont.woff") format("woff");
+
+}
+
+@font-face{
+
+    font-family:"MPLUSRounded1C Light";
+    src:url("../../1_Sources/1_Polices/2_EnLigne/MPLUSRounded1c-Light.woff2") format("woff2"),
+        url("../../1_Sources/1_Polices/2_EnLigne/MPLUSRounded1c-Light.woff") format("woff");
+
+}
+
+@font-face{
+
+    font-family:"MPLUSRounded1C Medium";
+    src:url("../../1_Sources/1_Polices/2_EnLigne/MPLUSRounded1c-Medium.woff2") format("woff2"),
+        url("../../1_Sources/1_Polices/2_EnLigne/MPLUSRounded1c-Medium.woff") format("woff");
+
+}
