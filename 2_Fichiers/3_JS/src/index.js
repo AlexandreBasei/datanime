@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			images.push(element['image']);
 		});
 
-		const chart = new Chart(canva1, {
+		const chart = new Chart(Graphe1, {
 			type: 'bar',
 			data: {
 				labels: labels,
