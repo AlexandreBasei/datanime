@@ -1,217 +1,160 @@
-
 @import url("./webfont.css");
-
-html{
-
-    overflow-x:hidden;
-    background-color:#131515;
-    height:1500px;
-    padding:0;
-    margin:0;
-    scroll-behavior:smooth;
-
+html {
+  overflow-x: hidden;
+  background-color: #131515;
+  height: 1500px;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-body{
-
-    background-image:linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.75) 100%);
-    background-blend-mode:multiply, multiply;
-    background-repeat:no-repeat;
-    font-family:"Hashiba";
-    color:#faf9f9;
-    font-size:1.5REM;
-    height:1500px;
-    position:relative;
-    padding:0;
-    margin:0;
+body {
+  background-image: linear-gradient(-135deg, #131515 0%, hsla(180deg, 5%, 8%, 0.75) 100%);
+  background-blend-mode: multiply, multiply;
+  background-repeat: no-repeat;
+  font-family: "Hashiba";
+  color: #faf9f9;
+  font-size: 1.5REM;
+  height: 1500px;
+  position: relative;
+  padding: 0;
+  margin: 0;
 }
+body main {
+  height: 1500px;
+  margin-bottom: 0%;
+  z-index: 0;
+  /* body main h2{
 
-body main{
+      text-align:end;
+      color:#faf9f9;
+      font-family:"MPLUSRounded1C Medium";
+      font-size:2REM;
+      margin-top:2.5%;
+      margin-bottom:5%;
+      margin-right:2.5%;
+      text-shadow:5px 5px hsla(209, 100%, 82%, 0.5);
 
-    height:1500px;
-    margin-bottom:0%;
-    z-index:0;
-
+  } */
 }
-
-body main nav{
-
-    display:flex;
-    justify-content:start;
-    align-items:center;
-    flex-flow:column wrap;
-    gap:10%;
-    padding-top:5%;
-    padding-left:7.5%;
-    height:1500px;
-    position:fixed;
-    z-index:2;
-
+body main nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-flow: column wrap;
+  gap: 10%;
+  padding-top: 5%;
+  padding-left: 7.5%;
+  height: 1500px;
+  position: fixed;
+  z-index: 2;
 }
-
-body main nav .btn{
-
-    background-color:#faf9f9;
-    color:#131515;
-    font-family:"MPLUSRounded1C Medium";
-    font-size:1REM;
-    width:150px;
-    padding:5%;
-    border:none;
-    border-radius:15px;
-    box-shadow:#faf9f9;
-    box-shadow:#131515 0px 20px 30px -10px;
-    transition: transform 0.25s ease, background-color 0.5s ease;
-    cursor:pointer;
-
+body main nav .btn {
+  background-color: #faf9f9;
+  color: #131515;
+  font-family: "MPLUSRounded1C Medium";
+  font-size: 1REM;
+  width: 150px;
+  padding: 5%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: #faf9f9;
+  box-shadow: #131515 0px 20px 30px -10px;
+  transition: transform 0.25s ease, background-color 0.5s ease;
+  cursor: pointer;
 }
-
-body main nav #Premier:hover{
-
-    transform:scale(1.25);
-    background-color:#dab6fc;
-
+body main nav #Premier:hover {
+  transform: scale(1.25);
+  background-color: #dab6fc;
 }
-
-body main nav #Deuxieme:hover{
-    
-    transform:scale(1.25);
-    background-color:#ffe761;
-
+body main nav #Deuxieme:hover {
+  transform: scale(1.25);
+  background-color: #ffe761;
 }
-
-body main nav #Troisieme:hover{
-    
-    transform:scale(1.25);
-    background-color:#f08080;
-
+body main nav #Troisieme:hover {
+  transform: scale(1.25);
+  background-color: #f08080;
 }
-
-body main h1{
-
-    text-align:end;
-    color:#faf9f9;
-    font-size:5REM;
-    margin-top:2.5%;
-    margin-bottom:2.5%;
-    margin-right:2.5%;
-    text-shadow:5px 5px#a2d2ff;
+body main h1 {
+  text-align: end;
+  color: #faf9f9;
+  font-size: 5REM;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  margin-right: 2.5%;
+  text-shadow: 5px 5px #a2d2ff;
 }
-
-/* body main h2{
-
-    text-align:end;
-    color:#faf9f9;
-    font-family:"MPLUSRounded1C Medium";
-    font-size:2REM;
-    margin-top:2.5%;
-    margin-bottom:5%;
-    margin-right:2.5%;
-    text-shadow:5px 5px hsla(209, 100%, 82%, 0.5);
-
-} */
-
-body main .droite{
-
-    width:100%;
-    left:-110%;
-    transition: left 1s ease, right 1s ease;
-
+body main .droite {
+  width: 100%;
+  left: -110%;
+  transition: left 1s ease, right 1s ease;
 }
-
-body main .gauche{
-
-    width:100%;
-    left:-110%;
-    transition: left 1s ease, right 1s ease;
-
+body main .gauche {
+  width: 100%;
+  left: -110%;
+  transition: left 1s ease, right 1s ease;
 }
-
-body main .centre{
-
-    width:100%;
-    left:0%;
-    right:0%;
-    transition: left 1s ease, right 1s ease;
-
+body main .centre {
+  width: 100%;
+  left: 0%;
+  right: 0%;
+  transition: left 1s ease, right 1s ease;
 }
-
-body main section{
-
-    height:1200px;
-    position:absolute;
-    z-index:1;
-
+body main section {
+  height: 1200px;
+  position: absolute;
+  z-index: 1;
 }
-
-body main section article{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-flow:wrap row;
-
+body main section article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
 }
-
-body main section article canvas{
-
-    background-color:red;
-    min-width:60%;
-    min-height:50%;
-    max-width:75%;
-    max-height:50%;
-    margin-left:15%;
-
+body main section article canvas {
+  background-color: red;
+  min-width: 60%;
+  min-height: 50%;
+  max-width: 75%;
+  max-height: 50%;
+  margin-left: 15%;
 }
-
-body main section h3{
-
-    text-align:center;
-    color:#faf9f9;
-    font-family:"Hashiba";
-    font-size:2.5REM;
-    margin-top:-5%;
-    margin-bottom:5%;
-    margin-left:30%;
-    margin-right:5%;
-    position:absolute;
-
+body main section h3 {
+  text-align: center;
+  color: #faf9f9;
+  font-family: "Hashiba";
+  font-size: 2.5REM;
+  margin-top: -5%;
+  margin-bottom: 5%;
+  margin-left: 30%;
+  margin-right: 5%;
+  position: absolute;
 }
-
-body main section p{
-
-    text-align:center;
-    color:#faf9f9;
-    font-family:"MPLUSRounded1C Light";
-    font-size:1.5REM;
-    padding: 2.5% 25%;
-
+body main section p {
+  text-align: center;
+  color: #faf9f9;
+  font-family: "MPLUSRounded1C Light";
+  font-size: 1.5REM;
+  padding: 2.5% 25%;
 }
-
-body main footer{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background-color:#faf9f9;
-    width:25%;
-    height:75px;
-    margin-left:75%;
-    bottom:0;
-    position:absolute;
-    border-top-left-radius:37.5px 37.5px;
-
+body main footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf9f9;
+  width: 25%;
+  height: 75px;
+  margin-left: 75%;
+  bottom: 0;
+  position: absolute;
+  border-top-left-radius: 37.5px 37.5px;
 }
-
-body main footer h4{
-
-    text-align:center;
-    color:#131515;
-    font-family:"MPLUSRounded1C Light";
-    font-size:1.5REM;
-
+body main footer h4 {
+  text-align: center;
+  color: #131515;
+  font-family: "MPLUSRounded1C Light";
+  font-size: 1.5REM;
 }
 
 /*Couleurs*/
-
-/* #131515, #faf9f9, #a2d2ff, #dab6fc, #ffe761, #f08080 */
+/* #131515, #faf9f9, #a2d2ff, #dab6fc, #ffe761, #f08080 *//*# sourceMappingURL=index.css.map */
