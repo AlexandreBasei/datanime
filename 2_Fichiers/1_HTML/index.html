@@ -2,130 +2,102 @@
 
 <html lang="fr">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" href="../../1_Sources/2_Images/0_Icônes/Livre.ico">
-        <link href="../2_CSS/index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../1_Sources/3_Icônes/Books.ico">
+    <link rel="stylesheet" href="../2_CSS/index.css">
 
-        <title>Datavisualisation des Animés</title>
+    <title>DatAnimes</title>
 
-    </head>
+</head>
 
-    <body>
-        <main>
+<body>
 
-            <nav>
-                <button class="btn" id="btn1">Popularité</button>
-                <button class="btn" id="btn2">Genre</button>
-                <button class="btn" id="btn3">Fonction</button>
-            </nav>
+    <main>
+        
+        <nav>
 
-            <h1>Datavisualisation des Animés</h1>
+            <button type="button" class="btn" id="Premier">Premier</button>
+            <button type="button" class="btn" id="Deuxieme">Deuxième</button>
+            <button type="button" class="btn" id="Troisieme">Troisieme</button>
 
-            <section class="centre" id="section1">
-                <h2>Popularité</h2>
-                <article>
-                    <canvas id="Graphe1"></canvas>
-                    <p>
-                        Choisir et trouver un thème qui vous intéresse et un jeu de données associé (fichier csv, json, ou
-                        API).
+        </nav>
 
-                        La page doit comporter au moins 3 graphes (présentés dans des canvas).
-                        Si c’est pertinent vous pouvez également mettre une image qui corresponde à votre travail avec M.
-                        Clech,
-                        mais ce n’est pas obligatoire.
-                        Ces 3 graphes présentent trois aspects du jeu de données choisi.
+    <h1>DatAnimes</h1>
 
-                        Il faut également un court paragraphe présentant une analyse écrite et chiffrée du jeu choisie.
-                        Il faut trouver un moyen pour que ce paragraphe apparaisse quand c’est pertinent et s’intègre
-                        harmonieusement dans la page.
-                        Il doit comporter des indicateurs statistiques pertinent(moyenne, variance...).
+    <!-- <h2>Les datavisualisation des mangas adaptés en séries d'animation</h2> -->
 
-                        Il faut au moins un appel ajax permettant de filtrer les données sur au moins un des graphes.
-                        Il faudra me rendre sur e-campus un court rapport donnant au moins le lien où je peux tester
-                        votre travail et justifiant les choix faits : thème choisi, pourquoi les 3 graphes présentées
-                        sont-ils
-                        pertinents, commentaire sur le design, les couleurs choisies...
-                    </p>
-                </article>
-            </section>
+    <section class="centre" id="section1">
 
-            <section class="droite" id="section2">
-                <h2>Genre</h2>
+        <h3>Premier</h3>
 
-                <article>
-                    <canvas id="Graphe2"></canvas>
-                    <p>
-                        Choisir et trouver un thème qui vous intéresse et un jeu de données associé (fichier csv, json, ou
-                        API).
+        <article>
 
-                        La page doit comporter au moins 3 graphes (présentés dans des canvas).
-                        Si c’est pertinent vous pouvez également mettre une image qui corresponde à votre travail avec M.
-                        Clech,
-                        mais ce n’est pas obligatoire.
-                        Ces 3 graphes présentent trois aspects du jeu de données choisi.
+            <canvas id="Graphe1">
 
-                        Il faut également un court paragraphe présentant une analyse écrite et chiffrée du jeu choisie.
-                        Il faut trouver un moyen pour que ce paragraphe apparaisse quand c’est pertinent et s’intègre
-                        harmonieusement dans la page.
-                        Il doit comporter des indicateurs statistiques pertinent(moyenne, variance...).
+            </canvas>
+          
+            <p>
+                Le texte relatif au graphe sera présent ici
+            </p>
 
-                        Il faut au moins un appel ajax permettant de filtrer les données sur au moins un des graphes.
-                        Il faudra me rendre sur e-campus un court rapport donnant au moins le lien où je peux tester
-                        votre travail et justifiant les choix faits : thème choisi, pourquoi les 3 graphes présentées
-                        sont-ils
-                        pertinents, commentaire sur le design, les couleurs choisies...
-                    </p>
-                </article>
+        </article>
 
-            </section>
+    </section>
 
-            <section class="droite" id="section3">
-                <h2>En fonction de :</h2>
-                <article>
-                    <canvas id="Graphe3"></canvas>
-                    <p>
-                        Choisir et trouver un thème qui vous intéresse et un jeu de données associé (fichier csv, json, ou
-                        API).
+    <section class="droite" id="section2">
 
-                        La page doit comporter au moins 3 graphes (présentés dans des canvas).
-                        Si c’est pertinent vous pouvez également mettre une image qui corresponde à votre travail avec M.
-                        Clech,
-                        mais ce n’est pas obligatoire.
-                        Ces 3 graphes présentent trois aspects du jeu de données choisi.
+        <h3>Deuxieme</h3>
 
-                        Il faut également un court paragraphe présentant une analyse écrite et chiffrée du jeu choisie.
-                        Il faut trouver un moyen pour que ce paragraphe apparaisse quand c’est pertinent et s’intègre
-                        harmonieusement dans la page.
-                        Il doit comporter des indicateurs statistiques pertinent(moyenne, variance...).
+        <article>
 
-                        Il faut au moins un appel ajax permettant de filtrer les données sur au moins un des graphes.
-                        Il faudra me rendre sur e-campus un court rapport donnant au moins le lien où je peux tester
-                        votre travail et justifiant les choix faits : thème choisi, pourquoi les 3 graphes présentées
-                        sont-ils
-                        pertinents, commentaire sur le design, les couleurs choisies...
-                    </p>
-                </article>
-            </section>
+            <canvas id="Graphe2">
+                
+            </canvas>
+        
+            <p>
+                Le texte relatif au graphe sera présent ici
+            </p>
 
-            <footer>
+        </article>
 
-                <h4>Chaker & Alexandre</h4>
+    </section>
+
+    <section class="droite" id="section3">
+
+        <h3>Troisieme</h3>
+
+        <article>
+
+            <canvas id="Graphe3">
+                
+            </canvas>
+                            
+            <p>
+                Le texte relatif au graphe sera présent ici
+            </p>
+
+        </article>
+
+    </section>
+
+    <footer>
+
+        <h4>Chaker & Alexandre</h4>
+
+    </footer>
+
+</main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="../3_JS/vendor/chart-utils.min.js"></script>
+    <script src="../3_JS/vendor/chart.min.js"></script>
+    <script src="../3_JS/src/index.js"></script>
     
-            </footer>
-
-        </main>
-
-        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-        <script src="../3_JS/vendor/chart-utils.min.js"></script>
-        <script src="../3_JS/vendor/chart.min.js"></script>
-        <script src="../3_JS/src/index.js"></script>
-
-    </body>
+</body>
 
 </html>

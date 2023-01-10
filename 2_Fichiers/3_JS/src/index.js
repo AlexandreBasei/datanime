@@ -291,12 +291,5 @@ document.addEventListener('DOMContentLoaded', function () {
 		// 				scales: {
 		// 					y: {
 		// 						min: 0
-
-		// 					}
-		// 				}
-		// 			}
-		// 		});
-		// 	c.update(); //On met Ã  jour le canvas
-		// });  //fin du success
 	});
-}); // document.addEventListener('DOMContentLoaded', function() {
+});
