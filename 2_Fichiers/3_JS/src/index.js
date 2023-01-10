@@ -4,11 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	'use strict';
 
 	var page = 1;
-	console.log(page);
 
 
 	$("#Troisieme").click(function () {
-		console.log(page);
 
 		if (page == 2) {
 			// $("#section2").show();
@@ -35,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	$("#Deuxieme").click(function () {
-		console.log(page);
 
 		if (page == 3) {
 			$("#section2").show();
@@ -61,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	$("#Premier").click(function () {
-		console.log(page);
 
 		if (page == 3) {
 			$("#section3").addClass('droite');
