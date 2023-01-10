@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 	'use strict';
-
+// FEUR
 	var page = 1;
 
 
@@ -95,124 +95,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
-	const settings = {
-		"async": true,
-		"crossDomain": true,
-		"url": "https://anime-db.p.rapidapi.com/anime/by-id/1",
-		"method": "GET",
-		"headers": {
-			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
-			"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
-		}
-	};
-
-	// $.ajax(settings).done(function (response) {
-	// 	console.log(response);
-	// });
-
-	const settings2 = {
-		"async": true,
-		"crossDomain": true,
-		"url": "https://anime-db.p.rapidapi.com/genre",
-		"method": "GET",
-		"headers": {
-			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
-			"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
-		}
-	};
-
-	// $.ajax(settings2).done(function (response) {
-	// 	console.log(response);
-	// });
-
-	const settings3 = {
-		"async": true,
-		"crossDomain": true,
-		"url": "https://anime-db.p.rapidapi.com/anime/by-ranking/6",
-		"method": "GET",
-		"headers": {
-			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
-			"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
-		}
-	};
-
-	// $.ajax(settings3).done(function (response) {
-	// 	console.log(response);
-	// 	var titres = response['title'];
-	// 	var 
-
-	// 	const c = new Chart('Graphe1',
-	// 		{
-	// 			type: 'bar',
-	// 			data: {
-	// 				labels: fullname,
-	// 				datasets: [{
-	// 					label: "salaire annuel",
-	// 					data: 
-	// 				}
-
-	// 				]
-	// 			},
-
-	// 			options: {
-	// 				title: {
-	// 					display: true,
-	// 					text: 'salaires'
-	// 				},
-	// 				scales: {
-	// 					y: {
-	// 						min: 0
-
-	// 					}
-	// 				}
-	// 			}
-	// 		});
-	// 	c.update(); //On met Ã  jour le canvas
-
-	// });
-
-	// $.ajax({
-	// 	url: 'https://api.anemy.fr/v2/anime/',
-	// 	method: "GET",
-	// 	data:{
-	// 		"like": {
-	// 			"saison": "%2018"
-	// 		}
-	// 	},
-	//     headers: { "Content-type": "application/json", "Authorization": "VOTRE_CLÉ" },
-	// 	dataType: 'json',
-	// 	success: function (res) {
-	// 		console.log(res);
-	// 	}
-	// c = new Chart('notes',
-	// 	{
-	// 		type: 'bar',
-	// 		data: {
-	// 			labels: fullname,
-	// 			datasets: [{
-	// 				label: "salaire annuel",
-	// 				data: salary
-	// 			}
-
-	// 			]
-	// 		},
-
-	// 		options: {
-	// 			title: {
-	// 				display: true,
-	// 				text: 'salaires'
-	// 			},
-	// 			scales: {
-	// 				y: {
-	// 					min: 0
-
-	// 				}
-	// 			}
-	// 		}
-	// 	});
-	// c.update(); //On met Ã  jour le canvas
-	// });  //fin du success
-
 	const settings1 = {
 		"async": true,
 		"crossDomain": true,
@@ -228,10 +110,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	$.ajax(settings1).done(function (response) {
 		console.log(response);
 
-		const canva1 = $("#Graphe1");
 		const ranking = [];
 		const labels = [];
-		const images = [];
 
 		response['data'].forEach(element => {
 			ranking.push(element['ranking']);
@@ -239,10 +119,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		response['data'].forEach(element => {
 			labels.push(element['title']);
-		});
-
-		response['data'].forEach(element => {
-			images.push(element['image']);
 		});
 
 		const chart = new Chart(Graphe1, {
@@ -253,56 +129,128 @@ document.addEventListener('DOMContentLoaded', function () {
 					{
 						label: 'Rang',
 						data: ranking,
-						backgroundColor: "url("+images[0]+")",
-						borderColor: 'rgba(255, 99, 132, 1)',
+						backgroundColor: "#a2d2ff",
+						// borderColor: 'white',
 						borderWidth: 1,
 						color: 'white',
 					},
 				],
 			},
 			options: {
+				// indexAxis: 'y',
 				legend: {
 					labels: {
-						color: 'white'
+						color: 'white',
 					}
 				},
 				scales: {
-					x: {
-						ticks: {
-							color: 'white'
+					xAxes: [{
+						reverse: true,
+						ticks: [{
+							color: 'white',
+							reverse: true
+						}],
+						grid: {
+							color: 'whitesmoke',
+							borderColor: 'whitesmoke'
 						}
-					},
+					}],
 					y: {
+						min: 0,
 						ticks: {
 							color: 'white'
+						},
+						grid: {
+							color: 'whitesmoke',
+							borderColor: 'whitesmoke'
 						}
 					},
 				},
 			},
 		});
 		chart.update();
+	});
 
+	const gaction = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10000&genres=Action",
+		"method": "GET",
+		"headers": {
+			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
+			"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
+		}
+	};
 
-		// 	c = new Chart('notes',
-		// 		{
-		// 			type: 'bar',
-		// 			data: {
-		// 				labels: ,
-		// 				datasets: [{
-		// 					label: "salaire annuel",
-		// 					data: salary
-		// 				}
+	const gsuspense = {
+		"async": true,
+		"crossDomain": true,
+		"url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10000&genres=Fantasy",
+		"method": "GET",
+		"headers": {
+			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
+			"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
+		}
+	};
 
-		// 				]
-		// 			},
+	const nombre = [];
+	var action = 0;
+	const genre = ["Action","Suspense","Horreur","Sport","Surnaturel","Fantasy","Drama","Comédie","Mystère","Tranche de vie","Aventure","Romance","Sci-Fi"];
+	
+	$.ajax(gaction).done(function (response) {
+		console.log(response);
 
-		// 			options: {
-		// 				title: {
-		// 					display: true,
-		// 					text: 'salaires'
-		// 				},
-		// 				scales: {
-		// 					y: {
-		// 						min: 0
+		response['data'].forEach(element => {
+			action++;
+		});
+
+		const chart2 = new Chart(Graphe2, {
+			type: 'radar',
+			data: {
+				labels: genre,
+				datasets: [
+					{
+						label: 'Nombre',
+						data: nombre.length,
+						backgroundColor: "#a2d2ff",
+						// borderColor: 'white',
+						borderWidth: 1,
+						color: 'white',
+					},
+				],
+			},
+			options: {
+				// indexAxis: 'y',
+				legend: {
+					labels: {
+						color: 'white',
+					}
+				},
+				scales: {
+					xAxes: [{
+						reverse: true,
+						ticks: [{
+							color: 'white',
+							reverse: true
+						}],
+						grid: {
+							color: 'whitesmoke',
+							borderColor: 'whitesmoke'
+						}
+					}],
+					y: {
+						min: 0,
+						ticks: {
+							color: 'white'
+						},
+						grid: {
+							color: 'whitesmoke',
+							borderColor: 'whitesmoke'
+						}
+					},
+				},
+			},
+		});
+		chart2.update();
 	});
 });

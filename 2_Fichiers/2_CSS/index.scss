@@ -116,7 +116,8 @@ body{
         .droite{
 
             width:100%;
-            left:-110%;
+            left:110%;
+            transition: left 1s ease, right 1s ease;
 
         }
 
@@ -288,6 +289,7 @@ body{
 
                 canvas{
 
+                    // background-color:red;
                     min-width:50%;
                     min-height:75%;
                     max-width:50%;

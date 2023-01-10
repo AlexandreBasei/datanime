@@ -90,7 +90,8 @@ body main h1 {
 }
 body main .droite {
   width: 100%;
-  left: -110%;
+  left: 110%;
+  transition: left 1s ease, right 1s ease;
 }
 body main .gauche {
   width: 100%;
