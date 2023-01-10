@@ -5,6 +5,7 @@ html {
   background-color: rgb(60, 59, 59);
   padding: 0;
   margin: 0;
+<<<<<<< HEAD
 }
 
 body {
@@ -14,6 +15,18 @@ body {
   font-family: "hashibaregular";
   color: #ffffff;
   font-size: 1.5REM;
+=======
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #212529;
+  background-blend-mode: multiply, multiply;
+  background-repeat: no-repeat;
+  font-family: "hashibaregular";
+  color: #f1faee;
+  font-size: 2.5REM;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
   padding: 0;
   margin: 0;
   position: relative;
@@ -21,16 +34,30 @@ body {
 }
 body main {
   height: 1500px;
+<<<<<<< HEAD
+=======
+  background-image: url("../../../png-transparent-monkey-d-luffy-line-art-drawing-sketch-one-piece-manga-angle-white-face.png");
+  background-repeat: no-repeat;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
   margin-bottom: 0%;
 }
 body main h1 {
   text-align: center;
+<<<<<<< HEAD
   margin-bottom: 1%;
+=======
+  margin-bottom: 2.5%;
+  margin-top: 0%;
+  margin-left: 40%;
+  padding-top: 1.25%;
+  text-shadow: 5px 5px #0466c8;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
 }
 body main nav {
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   gap: 5%;
   padding-top: 3%;
   height: 100px;
@@ -40,15 +67,47 @@ body main nav .btn {
   padding: 1.5%;
   border-radius: 10px;
   color: #ffffff;
+=======
+  flex-flow: column wrap;
+  gap: 25%;
+  padding-left: 7.5%;
+  padding-top: 5%;
+  height: 600px;
+  position: fixed;
+  z-index: 2;
+}
+body main nav .btn {
+  background-color: #f1faee;
+  padding: 5%;
+  border-radius: 10px;
+  color: #212529;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
   font-size: 1.5REM;
   font-family: "mplus_rounded1cblack";
   border: none;
   cursor: pointer;
   transition: transform 0.3s ease, background-color 0.5s ease;
+<<<<<<< HEAD
 }
 body main nav .btn:hover {
   transform: scale(1.1);
   background-color: rgb(184, 139, 227);
+=======
+  width: 150px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.25) 0px -12px 30px, rgba(0, 0, 0, 0.25) 0px 4px 6px, rgba(0, 0, 0, 0.25) 0px 12px 13px, rgba(0, 0, 0, 0.125) 0px -3px 5px;
+}
+body main nav #btn1:hover {
+  transform: scale(1.1);
+  background-color: #f25c54;
+}
+body main nav #btn2:hover {
+  transform: scale(1.1);
+  background-color: #ffd166;
+}
+body main nav #btn3:hover {
+  transform: scale(1.1);
+  background-color: #B8C0FF;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
 }
 body main .droite {
   left: 110%;
@@ -69,21 +128,43 @@ body main .centre {
 body main section {
   position: absolute;
   height: 1200px;
+<<<<<<< HEAD
+=======
+  z-index: 0;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
 }
 body main section h2 {
   text-align: center;
   margin-top: 0;
+<<<<<<< HEAD
+=======
+  position: absolute;
+  left: 25%;
+  top: -3.5%;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
 }
 body main section article {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
 }
 body main section article canvas {
   background-color: bisque;
   min-width: 50%;
   min-height: 45%;
+=======
+  z-index: 1;
+}
+body main section article canvas {
+  min-width: 65%;
+  min-height: 50%;
+  max-width: 70%;
+  max-width: 50%;
+  margin-left: 15%;
+  background-color: #f25c54;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
 }
 body main section article p {
   padding: 1% 25%;
@@ -102,4 +183,27 @@ body main section article p {
   $uranian-blue:#bde0feff;
   $baby-blue-eyes:#a2d2ffff; 
   */
+<<<<<<< HEAD
+=======
+}
+
+footer {
+  background-color: #f1faee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 75px;
+  margin-left: 75%;
+  bottom: 0;
+  position: absolute;
+  border-top-left-radius: 75px 75px;
+}
+
+h4 {
+  font-size: 2REM;
+  font-family: "mplus_rounded1cblack";
+  margin-left: 5%;
+  color: #212529;
+>>>>>>> 381bf0ae96520cf8466a786d04d9ce1d6202a002
 }/*# sourceMappingURL=index.css.map */

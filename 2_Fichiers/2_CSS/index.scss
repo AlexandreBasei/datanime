@@ -6,58 +6,83 @@ html{
     background-color: rgb(60, 59, 59);
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-
-    background-color: rgb(152, 32, 32);
+    
+    background-color: #212529;
     // background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.40) 0%, rgba(0, 0, 0, 0.40) 120%) #999999;
     background-blend-mode: multiply, multiply;
     background-repeat: no-repeat;
     font-family: "hashibaregular";
-    color: #ffffff;
-    font-size: 1.5REM;
+    color: #f1faee;
+    font-size: 2.5REM;
     padding: 0;
     margin: 0;
     position: relative;
     height: 1500px;
+    
 
     main {
 
         height : 1500px;
-
+        background-image:url("../../../png-transparent-monkey-d-luffy-line-art-drawing-sketch-one-piece-manga-angle-white-face.png");
+        background-repeat: no-repeat;
         margin-bottom: 0%;
 
         h1 {
             text-align: center;
-            margin-bottom: 1%;
+            margin-bottom: 2.5%;
+            margin-top: 0%;
+            margin-left:40%;
+            padding-top:1.25%;
+            text-shadow: 5px 5px #0466c8;;
+
         }
 
         nav {
 
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 5%;
-            padding-top: 3%;
-            height: 100px;
+            justify-content:center;
+            flex-flow:column wrap;
+            gap: 25%;
+            padding-left:7.5%;
+            padding-top:5%;
+
+            height: 600px;
+            position:fixed;
+            z-index:2;
 
             .btn {
 
-                background-color: rgb(196, 161, 228);
-                padding: 1.5%;
+                background-color:#f1faee;
+                padding: 5%;
                 border-radius: 10px;
-                color: #ffffff;
+                color: #212529;
                 font-size: 1.5REM;
                 font-family: "mplus_rounded1cblack";
                 border: none;
                 cursor: pointer;
                 transition: transform 0.3s ease, background-color 0.5s ease;
+                width:150px;
+                box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.25) 0px -12px 30px, rgba(0, 0, 0, 0.25) 0px 4px 6px, rgba(0, 0, 0, 0.25) 0px 12px 13px, rgba(0, 0, 0, 0.125) 0px -3px 5px;
             }
 
-            .btn:hover{
+            #btn1:hover{
                 transform: scale(1.1);
-                background-color: rgb(184, 139, 227);
+                background-color:#f25c54;
+            }
+
+            #btn2:hover{
+                transform: scale(1.1);
+                background-color:#ffd166;
+            }
+
+            #btn3:hover{
+                transform: scale(1.1);
+                background-color:#B8C0FF;
             }
 
         }
@@ -85,10 +110,14 @@ body {
 
             position: absolute;
             height: 1200px;
+            z-index:0;
 
             h2{
                 text-align: center;
                 margin-top: 0;
+                position:absolute;
+                left:25%;
+                top:-3.5%;
             }
 
             article {
@@ -97,12 +126,16 @@ body {
                 flex-flow: wrap row;
                 justify-content: center;
                 align-items: center;
+                z-index:1;
 
                 canvas {
 
-                    background-color: bisque;
-                    min-width: 50%;
-                    min-height: 45%;
+                    min-width: 65%;
+                    min-height: 50%;
+                    max-width:70%;
+                    max-width:50%;
+                    margin-left:15%;
+                    background-color: #f25c54;
 
                 }
 
@@ -132,5 +165,44 @@ body {
 
         }
     }
+
+}
+
+footer{
+
+    background-color: #f1faee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:25%;
+    height:75px;
+    margin-left:75%;
+    bottom:0;
+    position: absolute;
+    border-top-left-radius: 75px 75px;
+}
+
+h4{
+    font-size:2REM;
+    font-family:"mplus_rounded1cblack";
+    margin-left:5%;
+    color:#212529;
+}
+
+// 212529
+// f1faee
+// f25c54
+// ffd166
+// B8C0FF
+
+.Pop{
+
+}
+
+.Gen{
+
+}
+
+.Fon{
 
 }
