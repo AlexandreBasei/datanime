@@ -95,26 +95,28 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
-	function graphe1(url) {
+	const select = document.getElementById('genre');
+	var Opgenre = select.value;
+	var url = 'Action';
+	var ranking = [];
+	var labels = [];
+	var chart = '';
 
-		const settings1 = {
-			"async": true,
-			"crossDomain": true,
-			// "url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10",
-			"url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10&genres=" + url + "&sortBy=ranking",
-			"method": "GET",
-			"headers": {
-				"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
-				// "X-RapidAPI-Key": "413494542fmsh37e255b3fc7392cp19f59ejsn92264c7d882c",
-				"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
-			}
-		};
+	$.ajax({
+		"async": true,
+		"crossDomain": true,
+		// "url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10",
+		"url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10&genres=" + url,
+		"method": "GET",
+		"headers": {
+			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
+			// "X-RapidAPI-Key": "413494542fmsh37e255b3fc7392cp19f59ejsn92264c7d882c",
+			"X-RapidAPI-Host": "anime-db.p.rapidapi.com",
+		},
+		success: function (response) {
 
-		$.ajax(settings1).done(function (response) {
-			console.log(response);
-
-			const ranking = [];
-			const labels = [];
+			ranking = [];
+			labels = [];
 
 			response['data'].forEach(element => {
 				ranking.push(element['ranking']);
@@ -124,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				labels.push(element['title']);
 			});
 
-			var chart = new Chart(Graphe1, {
+			chart = new Chart(Graphe1, {
 				type: 'bar',
 				data: {
 					labels: labels,
@@ -141,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					],
 				},
 				options: {
-					indexAxes: 'y',
+					// indexAxis: 'y',
 					legend: {
 						display: false,
 					},
@@ -172,13 +174,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				},
 			});
 			chart.update();
-		});
-	}
-
-	const select = document.getElementById('genre');
-	var Opgenre = select.value;
-	var url = '';
-
+		}
+	});
 
 	$("#genre").on("change", function () {
 		Opgenre = select.value;
@@ -226,8 +223,34 @@ document.addEventListener('DOMContentLoaded', function () {
 			url = 'Fantasy';
 		}
 
-		graphe1(url);
-		console.log(url);
+		$.ajax({
+			"async": true,
+			"crossDomain": true,
+			// "url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10",
+			"url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10&genres=" + url,
+			"method": "GET",
+			"headers": {
+				"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
+				// "X-RapidAPI-Key": "413494542fmsh37e255b3fc7392cp19f59ejsn92264c7d882c",
+				"X-RapidAPI-Host": "anime-db.p.rapidapi.com",
+			},
+			success: function (response) {
+				ranking = [];
+				labels = [];
+
+				response['data'].forEach(element => {
+					ranking.push(element['ranking']);
+				});
+
+				response['data'].forEach(element => {
+					labels.push(element['title']);
+				});
+
+				chart.data.labels = labels;
+				chart.data.datasets[0].data = ranking;
+				chart.update();
+			}
+		});
 	})
 
 	const settings2 = {
@@ -314,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 
 		var chart2 = new Chart(Graphe2, {
-			type: 'pie',
+			type: 'doughnut',
 			// type: 'doughnut',
 			data: {
 				labels: genre,
@@ -366,7 +389,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				fill: true,
 				backgroundColor: 'rgba(255, 99, 132, 0.2)',
 				borderColor: 'rgb(255, 99, 132)',
-				pointBackgroundColor: ['rgb(255, 99, 132)','blue','yellow','green','gold','silver','purple','cyan','orange','blueviolet','hotpink','bisque','brown'],
+				pointBackgroundColor: ['rgb(255, 99, 132)', 'blue', 'yellow', 'green', 'gold', 'silver', 'purple', 'cyan', 'orange', 'blueviolet', 'hotpink', 'bisque', 'brown'],
 				pointBorderColor: '#fff',
 				pointHoverBackgroundColor: '#fff',
 				pointHoverBorderColor: 'rgb(255, 99, 132)',
