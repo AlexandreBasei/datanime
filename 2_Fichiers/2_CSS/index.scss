@@ -4,11 +4,15 @@
 html{
 
     overflow-x:hidden;
-    background-color:#131515;
+    background-color:#000000;
     height:1500px;
     padding:0;
     margin:0;
     scroll-behavior:smooth;
+    
+    *{
+        transition: left 1s ease, right 1s ease, color 1s ease, background-image 1s ease, text-shadow 1s ease;
+    }
 
 }
 
@@ -40,23 +44,24 @@ body{
         gap:10%;
         padding-top:5%;
         padding-left:7.5%;
-        height:1500px;
+        height:1000px;
         position:fixed;
         z-index:2;
 
             .btn{
 
-            background-color:#faf9f9;
-            color:#131515;
+            background-image:url("../../1_Sources/4_Images/7_BrushBleue.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-color:transparent;
+            color:#faf9f9;
             font-family:"MPLUSRounded1C Medium";
-            font-size:1REM;
-            width:150px;
-            padding:5%;
+            font-size:2REM;
+            width:250px;
+            padding:10%;
             border:none;
             border-radius:15px;
-            box-shadow:#faf9f9;
-            box-shadow:#131515 0px 20px 30px -10px;
-            transition: transform 0.25s ease, background-color 0.5s ease;
+            transition: transform 0.25s ease, background-image 0.5s ease;
             cursor:pointer;
 
             }
@@ -64,21 +69,21 @@ body{
             #Premier:hover{
 
                 transform:scale(1.25);
-                background-color:#dab6fc;
+                background-image:url("../../1_Sources/4_Images/10_BrushViolette.png");
 
             }
 
             #Deuxieme:hover{
                 
                 transform:scale(1.25);
-                background-color:#ffe761;
+                background-image:url("../../1_Sources/4_Images/13_BrushJaune.png");
 
             }
 
             #Troisieme:hover{
                 
                 transform:scale(1.25);
-                background-color:#f08080;
+                background-image:url("../../1_Sources/4_Images/16_BrushRouge.png");
 
             }
         }
@@ -91,7 +96,8 @@ body{
             margin-top:2.5%;
             margin-bottom:2.5%;
             margin-right:2.5%;
-            text-shadow:5px 5px#a2d2ff;
+            text-shadow:5px 5px#131515;
+
         }
 
 /* body main h2{
@@ -110,7 +116,7 @@ body{
         .droite{
 
             width:100%;
-            left:-110%;
+            left:110%;
             transition: left 1s ease, right 1s ease;
 
         }
@@ -119,7 +125,6 @@ body{
 
             width:100%;
             left:-110%;
-            transition: left 1s ease, right 1s ease;
 
         }
 
@@ -128,7 +133,144 @@ body{
             width:100%;
             left:0%;
             right:0%;
-            transition: left 1s ease, right 1s ease;
+
+        }
+
+        .premier{
+                
+                background-image:linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.5) 100%);
+
+
+            .btn{
+
+                color:#FAF9F9;
+                background-image:url("../../1_Sources/4_Images/7_BrushBleue.png");
+
+            }
+
+            h1{
+
+                color:#ad2a2a;
+                text-shadow:5px 5px#131515;
+
+            }
+
+            h3{
+
+                color:#FAF9F9;
+
+            }
+
+            p{
+
+                color:#FAF9F9;
+
+            }
+
+            footer{
+
+                color:#FAF9F9;
+                background-image:url("../../1_Sources/4_Images/9_BrushBleue.png");
+
+            }
+
+            h4{
+
+                color:#FAF9F9;
+
+            }
+
+        }
+
+        .deuxieme{
+                
+                background-image:linear-gradient(-135deg, #FAF9F9 0%, hsla(0, 9%, 98%, 0.75) 100%);
+
+
+            .btn{
+
+                color:#A2D2FF;
+                background-image:url("../../1_Sources/4_Images/1_BrushNoire.png");
+
+            }
+
+            h1{
+
+                color:#A2D2FF;
+                text-shadow:5px 5px#FAF9F9;
+    
+            }
+
+            h3{
+
+                color:#A2D2FF;
+    
+            }
+
+            p{
+
+                color:#A2D2FF;
+    
+            }
+
+            footer{
+
+                color:#A2D2FF;
+                background-image:url("../../1_Sources/4_Images/3_BrushNoire.png");
+    
+            }
+
+            h4{
+
+                color:#A2D2FF;
+    
+            }
+
+        }
+
+        .troisieme{
+                
+                background-image:linear-gradient(-135deg, #A2D2FF 0%, hsla(209, 100%, 82%, 0.50) 100%);
+
+
+            .btn{
+
+                color:#131515;
+                background-image:url("../../1_Sources/4_Images/4_BrushBlanche.png");
+
+            }
+
+            h1{
+
+                color:#131515;
+                text-shadow:5px 5px#A2D2FF;
+    
+            }
+
+            h3{
+
+                color:#131515;
+    
+            }
+
+            p{
+
+                color:#131515;
+    
+            }
+
+            footer{
+
+                color:#131515;
+                background-image:url("../../1_Sources/4_Images/6_BrushBlanche.png");
+    
+            }
+
+            h4{
+
+                color:#131515;
+    
+            }
 
         }
 
@@ -147,11 +289,11 @@ body{
 
                 canvas{
 
-                    background-color:red;
-                    min-width:60%;
-                    min-height:50%;
-                    max-width:75%;
-                    max-height:50%;
+                    // background-color:red;
+                    min-width:50%;
+                    min-height:75%;
+                    max-width:50%;
+                    max-height:75%;
                     margin-left:15%;
 
                 }
@@ -163,10 +305,10 @@ body{
                 text-align:center;
                 color:#faf9f9;
                 font-family:"Hashiba";
-                font-size:2.5REM;
-                margin-top:-5%;
+                font-size:4REM;
+                margin-top:-4%;
                 margin-bottom:5%;
-                margin-left:30%;
+                margin-left:35%;
                 margin-right:5%;
                 position:absolute;
 
@@ -189,18 +331,21 @@ body{
             display:flex;
             justify-content:center;
             align-items:center;
-            background-color:#faf9f9;
             width:25%;
             height:75px;
             margin-left:75%;
             bottom:0;
             position:absolute;
             border-top-left-radius:37.5px 37.5px;
+            background-image:url("../../1_Sources/4_Images/9_BrushBleue.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-color:transparent;
 
             h4{
 
                 text-align:center;
-                color:#131515;
+                color:#FAF9F9;
                 font-family:"MPLUSRounded1C Light";
                 font-size:1.5REM;
 

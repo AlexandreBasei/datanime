@@ -1,11 +1,14 @@
 @import url("./webfont.css");
 html {
   overflow-x: hidden;
-  background-color: #131515;
+  background-color: #000000;
   height: 1500px;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+html * {
+  transition: left 1s ease, right 1s ease, color 1s ease, background-image 1s ease, text-shadow 1s ease;
 }
 
 body {
@@ -45,35 +48,36 @@ body main nav {
   gap: 10%;
   padding-top: 5%;
   padding-left: 7.5%;
-  height: 1500px;
+  height: 1000px;
   position: fixed;
   z-index: 2;
 }
 body main nav .btn {
-  background-color: #faf9f9;
-  color: #131515;
+  background-image: url("../../1_Sources/4_Images/7_BrushBleue.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  color: #faf9f9;
   font-family: "MPLUSRounded1C Medium";
-  font-size: 1REM;
-  width: 150px;
-  padding: 5%;
+  font-size: 2REM;
+  width: 250px;
+  padding: 10%;
   border: none;
   border-radius: 15px;
-  box-shadow: #faf9f9;
-  box-shadow: #131515 0px 20px 30px -10px;
-  transition: transform 0.25s ease, background-color 0.5s ease;
+  transition: transform 0.25s ease, background-image 0.5s ease;
   cursor: pointer;
 }
 body main nav #Premier:hover {
   transform: scale(1.25);
-  background-color: #dab6fc;
+  background-image: url("../../1_Sources/4_Images/10_BrushViolette.png");
 }
 body main nav #Deuxieme:hover {
   transform: scale(1.25);
-  background-color: #ffe761;
+  background-image: url("../../1_Sources/4_Images/13_BrushJaune.png");
 }
 body main nav #Troisieme:hover {
   transform: scale(1.25);
-  background-color: #f08080;
+  background-image: url("../../1_Sources/4_Images/16_BrushRouge.png");
 }
 body main h1 {
   text-align: end;
@@ -82,23 +86,93 @@ body main h1 {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
   margin-right: 2.5%;
-  text-shadow: 5px 5px #a2d2ff;
+  text-shadow: 5px 5px #131515;
 }
 body main .droite {
   width: 100%;
-  left: -110%;
+  left: 110%;
   transition: left 1s ease, right 1s ease;
 }
 body main .gauche {
   width: 100%;
   left: -110%;
-  transition: left 1s ease, right 1s ease;
 }
 body main .centre {
   width: 100%;
   left: 0%;
   right: 0%;
-  transition: left 1s ease, right 1s ease;
+}
+body main .premier {
+  background-image: linear-gradient(-135deg, #131515 0%, hsla(180deg, 5%, 8%, 0.5) 100%);
+}
+body main .premier .btn {
+  color: #FAF9F9;
+  background-image: url("../../1_Sources/4_Images/7_BrushBleue.png");
+}
+body main .premier h1 {
+  color: #FAF9F9;
+  text-shadow: 5px 5px #131515;
+}
+body main .premier h3 {
+  color: #FAF9F9;
+}
+body main .premier p {
+  color: #FAF9F9;
+}
+body main .premier footer {
+  color: #FAF9F9;
+  background-image: url("../../1_Sources/4_Images/9_BrushBleue.png");
+}
+body main .premier h4 {
+  color: #FAF9F9;
+}
+body main .deuxieme {
+  background-image: linear-gradient(-135deg, #FAF9F9 0%, hsla(0deg, 9%, 98%, 0.75) 100%);
+}
+body main .deuxieme .btn {
+  color: #A2D2FF;
+  background-image: url("../../1_Sources/4_Images/1_BrushNoire.png");
+}
+body main .deuxieme h1 {
+  color: #A2D2FF;
+  text-shadow: 5px 5px #FAF9F9;
+}
+body main .deuxieme h3 {
+  color: #A2D2FF;
+}
+body main .deuxieme p {
+  color: #A2D2FF;
+}
+body main .deuxieme footer {
+  color: #A2D2FF;
+  background-image: url("../../1_Sources/4_Images/3_BrushNoire.png");
+}
+body main .deuxieme h4 {
+  color: #A2D2FF;
+}
+body main .troisieme {
+  background-image: linear-gradient(-135deg, #A2D2FF 0%, hsla(209deg, 100%, 82%, 0.5) 100%);
+}
+body main .troisieme .btn {
+  color: #131515;
+  background-image: url("../../1_Sources/4_Images/4_BrushBlanche.png");
+}
+body main .troisieme h1 {
+  color: #131515;
+  text-shadow: 5px 5px #A2D2FF;
+}
+body main .troisieme h3 {
+  color: #131515;
+}
+body main .troisieme p {
+  color: #131515;
+}
+body main .troisieme footer {
+  color: #131515;
+  background-image: url("../../1_Sources/4_Images/6_BrushBlanche.png");
+}
+body main .troisieme h4 {
+  color: #131515;
 }
 body main section {
   height: 1200px;
@@ -112,21 +186,20 @@ body main section article {
   flex-flow: wrap row;
 }
 body main section article canvas {
-  background-color: red;
-  min-width: 60%;
-  min-height: 50%;
-  max-width: 75%;
-  max-height: 50%;
+  min-width: 50%;
+  min-height: 75%;
+  max-width: 50%;
+  max-height: 75%;
   margin-left: 15%;
 }
 body main section h3 {
   text-align: center;
   color: #faf9f9;
   font-family: "Hashiba";
-  font-size: 2.5REM;
-  margin-top: -5%;
+  font-size: 4REM;
+  margin-top: -4%;
   margin-bottom: 5%;
-  margin-left: 30%;
+  margin-left: 35%;
   margin-right: 5%;
   position: absolute;
 }
@@ -141,17 +214,20 @@ body main footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #faf9f9;
   width: 25%;
   height: 75px;
   margin-left: 75%;
   bottom: 0;
   position: absolute;
   border-top-left-radius: 37.5px 37.5px;
+  background-image: url("../../1_Sources/4_Images/9_BrushBleue.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
 }
 body main footer h4 {
   text-align: center;
-  color: #131515;
+  color: #FAF9F9;
   font-family: "MPLUSRounded1C Light";
   font-size: 1.5REM;
 }
