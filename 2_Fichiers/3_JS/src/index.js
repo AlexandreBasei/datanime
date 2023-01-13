@@ -1,26 +1,26 @@
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded',function(){
 
 	'use strict';
 // FEUR
 	var page = 1;
 
 
-	$("#Troisieme").click(function () {
+	$("#Troisieme").click(function(){
 
-		if (page == 2) {
+		if (page == 2){
 			// $("#section2").show();
 			$("#section2").addClass('gauche');
 			$("#section2").removeClass('centre');
 			$("#section3").addClass('centre');
 			$("#section3").removeClass('droite');
-			$("body").addClass('troisieme');
-			$("body").removeClass('deuxieme');
+			$("body").addClass('Bleu');
+			$("body").removeClass('Blanc');
 			window.scrollTo(0, 0);
 			page = 3;
 		}
 
-		if (page == 1) {
+		if (page == 1){
 			$("#section1").addClass('gauche');
 			$("#section1").removeClass('centre');
 			$("#section3").addClass('centre');
@@ -28,37 +28,37 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").hide();
 			$("#section2").addClass('gauche');
 			$("#section2").removeClass('droite');
-			$("body").addClass('troisieme');
-			$("body").removeClass('premier');
+			$("body").addClass('Bleu');
+			$("body").removeClass('Noir');
 			window.scrollTo(0, 0);
 			page = 3;
 		}
 
 	});
 
-	$("#Deuxieme").click(function () {
+	$("#Deuxieme").click(function(){
 
-		if (page == 3) {
+		if (page == 3){
 			$("#section2").show();
 			$("#section3").removeClass('centre');
 			$("#section3").addClass('droite');
 			$("#section2").addClass('centre');
 			$("#section2").removeClass('gauche');
-			$("body").addClass('deuxieme');
-			$("body").removeClass('troisieme');
+			$("body").addClass('Blanc');
+			$("body").removeClass('Bleu');
 			window.scrollTo(0, 0);
 			page = 2;
 		}
 
-		if (page == 1) {
+		if (page == 1){
 			$("#section2").show();
 			$("#section2").addClass('centre');
 			$("#section2").removeClass('droite');
 			$("#section2").removeClass('gauche');
 			$("#section1").addClass('gauche');
 			$("#section1").removeClass('centre');
-			$("body").addClass('deuxieme');
-			$("body").removeClass('premier');
+			$("body").addClass('Blanc');
+			$("body").removeClass('Noir');
 			window.scrollTo(0, 0);
 			page = 2;
 		}
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	});
 
-	$("#Premier").click(function () {
+	$("#Premier").click(function(){
 
 		if (page == 3) {
 			$("#section3").addClass('droite');
@@ -76,26 +76,28 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('gauche');
 			$("#section1").addClass('centre');
 			$("#section1").removeClass('gauche');
-			$("body").addClass('premier');
-			$("body").removeClass('troisieme');
+			$("body").addClass('Noir');
+			$("body").removeClass('Bleu');
 			window.scrollTo(0, 0);
 			page = 1;
 		}
 
-		if (page == 2) {
+		if (page == 2){
 			$("#section2").show();
 			$("#section2").addClass('droite');
 			$("#section2").removeClass('centre');
 			$("#section1").addClass('centre');
 			$("#section1").removeClass('gauche');
-			$("body").addClass('premier');
-			$("body").removeClass('deuxieme');
+			$("body").addClass('Noir');
+			$("body").removeClass('Blanc');
 			window.scrollTo(0, 0);
 			page = 1;
 		}
+
 	});
 
 	const settings1 = {
+
 		"async": true,
 		"crossDomain": true,
 		// "url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10",
@@ -105,9 +107,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
 			"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
 		}
+
 	};
 
-	$.ajax(settings1).done(function (response) {
+	$.ajax(settings1).done(function(response){
 		console.log(response);
 
 		const ranking = [];

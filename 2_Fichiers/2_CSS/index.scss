@@ -4,356 +4,404 @@
 html{
 
     overflow-x:hidden;
-    background-color:#000000;
-    height:1500px;
     padding:0;
     margin:0;
     scroll-behavior:smooth;
-    
-    *{
-        transition: left 1s ease, right 1s ease, color 1s ease, background-image 1s ease, text-shadow 1s ease;
-    }
-
-}
-
-body{
-
-    background-image:linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.75) 100%);
+    background-image:linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.95) 100%);
     background-blend-mode:multiply, multiply;
     background-repeat:no-repeat;
-    font-family:"Hashiba";
-    color:#faf9f9;
-    font-size:1.5REM;
-    height:1500px;
-    position:relative;
-    padding:0;
-    margin:0;
+    background-size:contain;
+    
+    *{
+    transition: left 1s ease, right 1s ease, color 1s ease, background-image 1s ease, text-shadow 1s ease;
+    }
 
-    main{
-
+    body{
+        
+        background-image: url("../../1_Sources/4_Images/19_Fond.png");
+        background-blend-mode:multiply, multiply;
+        background-repeat:no-repeat;
+        background-size:contain;
+        font-family:"Hashiba";
+        color:#faf9f9;
+        font-size:1.5REM;
         height:1500px;
-        margin-bottom:0%;
-        z-index:0;
+        position:relative;
+        padding:0;
+        margin:0;
 
-        nav{
+        main{
 
-        display:flex;
-        justify-content:start;
-        align-items:center;
-        flex-flow:column wrap;
-        gap:10%;
-        padding-top:5%;
-        padding-left:7.5%;
-        height:1000px;
-        position:fixed;
-        z-index:2;
+            height:1500px;
+            margin-bottom:0%;
+            z-index:0;
 
-            .btn{
+            nav{
 
-            background-image:url("../../1_Sources/4_Images/7_BrushBleue.png");
-            background-repeat:no-repeat;
-            background-size:cover;
-            background-color:transparent;
-            color:#faf9f9;
-            font-family:"MPLUSRounded1C Medium";
-            font-size:2REM;
-            width:250px;
-            padding:10%;
-            border:none;
-            border-radius:15px;
-            transition: transform 0.25s ease, background-image 0.5s ease;
-            cursor:pointer;
+                display:flex;
+                justify-content:start;
+                align-items:center;
+                flex-flow:column wrap;
+                gap:10%;
+                padding-top:5%;
+                padding-left:7.5%;
+                height:1000px;
+                position:fixed;
+                z-index:2;
 
-            }
+                .btn{
 
-            #Premier:hover{
+                    background-image:url("../../1_Sources/4_Images/7_BrushBleue.png");
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                    background-color:transparent;
+                    color:#faf9f9;
+                    font-family:"MPLUSRounded1C Medium";
+                    font-size:2REM;
+                    width:250px;
+                    padding:10%;
+                    border:none;
+                    border-radius:15px;
+                    transition: transform 0.25s ease, background-image 0.5s ease;
+                    cursor:pointer;
 
-                transform:scale(1.25);
-                background-image:url("../../1_Sources/4_Images/10_BrushViolette.png");
+                }
 
-            }
+                #Premier:hover{
 
-            #Deuxieme:hover{
-                
-                transform:scale(1.25);
-                background-image:url("../../1_Sources/4_Images/13_BrushJaune.png");
+                    transform:scale(1.25);
+                    background-image:url("../../1_Sources/4_Images/10_BrushViolette.png");
 
-            }
+                }
 
-            #Troisieme:hover{
-                
-                transform:scale(1.25);
-                background-image:url("../../1_Sources/4_Images/16_BrushRouge.png");
+                #Deuxieme:hover{
+                    
+                    transform:scale(1.25);
+                    background-image:url("../../1_Sources/4_Images/13_BrushJaune.png");
 
-            }
-        }
+                }
 
-        h1{
+                #Troisieme:hover{
+                    
+                    transform:scale(1.25);
+                    background-image:url("../../1_Sources/4_Images/16_BrushRouge.png");
 
-            text-align:end;
-            color:#faf9f9;
-            font-size:5REM;
-            margin-top:2.5%;
-            margin-bottom:2.5%;
-            margin-right:2.5%;
-            text-shadow:5px 5px#131515;
-
-        }
-
-/* body main h2{
-
-    text-align:end;
-    color:#faf9f9;
-    font-family:"MPLUSRounded1C Medium";
-    font-size:2REM;
-    margin-top:2.5%;
-    margin-bottom:5%;
-    margin-right:2.5%;
-    text-shadow:5px 5px hsla(209, 100%, 82%, 0.5);
-
-} */
-
-        .droite{
-
-            width:100%;
-            left:110%;
-            transition: left 1s ease, right 1s ease;
-
-        }
-
-        .gauche{
-
-            width:100%;
-            left:-110%;
-
-        }
-
-        .centre{
-
-            width:100%;
-            left:0%;
-            right:0%;
-
-        }
-
-        .premier{
-                
-                background-image:linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.5) 100%);
-
-
-            .btn{
-
-                color:#FAF9F9;
-                background-image:url("../../1_Sources/4_Images/7_BrushBleue.png");
-
+                }
             }
 
             h1{
 
-                color:#FAF9F9;
+                background-image:url("../../1_Sources/4_Images/8_BrushBleue.png");
+                background-repeat:no-repeat;
+                background-size:contain;
+                background-position:center;
+                height:25vh;
+                width:125vw;
+                text-align:center;
+                color:#faf9f9;
+                width:25%;
+                font-size:5REM;
+                margin-bottom:2.5%;
+                margin-left:72.5%;
+                margin-right:2.5%;
                 text-shadow:5px 5px#131515;
 
             }
+            
+            .droite{
 
-            h3{
-
-                color:#FAF9F9;
-
-            }
-
-            p{
-
-                color:#FAF9F9;
+                width:100%;
+                left:110%;
+                transition: left 1s ease, right 1s ease;
 
             }
 
-            footer{
+            .gauche{
 
-                color:#FAF9F9;
-                background-image:url("../../1_Sources/4_Images/9_BrushBleue.png");
-
-            }
-
-            h4{
-
-                color:#FAF9F9;
+                width:100%;
+                left:-110%;
 
             }
 
-        }
+            .centre{
 
-        .deuxieme{
-                
-                background-image:linear-gradient(-135deg, #FAF9F9 0%, hsla(0, 9%, 98%, 0.75) 100%);
-
-
-            .btn{
-
-                color:#A2D2FF;
-                background-image:url("../../1_Sources/4_Images/1_BrushNoire.png");
+                width:100%;
+                left:0%;
+                right:0%;
 
             }
 
-            h1{
+            .Noir{
+                    
+                background-image:linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.95) 100%);
 
-                color:#A2D2FF;
-                text-shadow:5px 5px#FAF9F9;
-    
-            }
+                body{
 
-            h3{
+                    background-image: url("../../1_Sources/4_Images/19_Fond.png");
 
-                color:#A2D2FF;
-    
-            }
+                    main{
 
-            p{
+                        nav{
 
-                color:#A2D2FF;
-    
-            }
+                            .btn{
 
-            footer{
+                                color:#FAF9F9;
+                                background-image:url("../../1_Sources/4_Images/7_BrushBleue.png");
 
-                color:#A2D2FF;
-                background-image:url("../../1_Sources/4_Images/3_BrushNoire.png");
-    
-            }
+                            }
+                        }
 
-            h4{
+                        h1{
 
-                color:#A2D2FF;
-    
-            }
+                            color:#FAF9F9;
+                            text-shadow:5px 5px#131515;
 
-        }
+                        }
 
-        .troisieme{
-                
-                background-image:linear-gradient(-135deg, #A2D2FF 0%, hsla(209, 100%, 82%, 0.50) 100%);
+                        section{
+                            
+                            h3{
 
+                                color:#FAF9F9;
 
-            .btn{
+                            }
 
-                color:#131515;
-                background-image:url("../../1_Sources/4_Images/4_BrushBlanche.png");
+                            p{
 
-            }
+                                color:#FAF9F9;
 
-            h1{
+                            }
 
-                color:#131515;
-                text-shadow:5px 5px#A2D2FF;
-    
-            }
+                        }
 
-            h3{
+                        footer{
 
-                color:#131515;
-    
-            }
+                            color:#FAF9F9;
+                            background-image:url("../../1_Sources/4_Images/9_BrushBleue.png");
 
-            p{
+                            h4{
 
-                color:#131515;
-    
-            }
+                                color:#FAF9F9;
 
-            footer{
+                            }
 
-                color:#131515;
-                background-image:url("../../1_Sources/4_Images/6_BrushBlanche.png");
-    
-            }
+                        }
 
-            h4{
-
-                color:#131515;
-    
-            }
-
-        }
-
-        section{
-
-            height:1200px;
-            position:absolute;
-            z-index:1;
-
-            article{
-
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                flex-flow:wrap row;
-
-                canvas{
-
-                    // background-color:red;
-                    min-width:50%;
-                    min-height:75%;
-                    max-width:50%;
-                    max-height:75%;
-                    margin-left:15%;
+                    }
 
                 }
 
             }
 
-            h3{
+            
 
-                text-align:center;
-                color:#faf9f9;
-                font-family:"Hashiba";
-                font-size:4REM;
-                margin-top:-4%;
-                margin-bottom:5%;
-                margin-left:35%;
-                margin-right:5%;
+            .Blanc{
+                    
+                background-image:linear-gradient(-135deg, #FAF9F9  0%, hsla(0, 9%, 98%, 0.95) 100%);
+
+                body{
+
+                    background-image: url("../../1_Sources/4_Images/20_Fond.png");
+                
+                    main{
+            
+                        nav{
+
+                            .btn{
+
+                                color:#A2D2FF;
+                                background-image:url("../../1_Sources/4_Images/1_BrushNoire.png");
+
+                            }
+
+                        }
+
+                        h1{
+
+                            color:#A2D2FF;
+                            text-shadow:5px 5px#FAF9F9;
+                
+                        }
+
+                        section{
+
+                            h3{
+
+                                color:#A2D2FF;
+                    
+                            }
+
+                            p{
+
+                                color:#A2D2FF;
+                    
+                            }
+
+                        }
+
+                        footer{
+
+                            color:#A2D2FF;
+                            background-image:url("../../1_Sources/4_Images/3_BrushNoire.png");
+
+                            h4{
+
+                                color:#A2D2FF;
+                    
+                            }
+
+                        }
+                    
+                    }
+
+                }
+
+            }
+
+            .Bleu{
+                    
+                background-image:linear-gradient(-135deg, #A2D2FF  0%, hsla(209, 100%, 82%, 0.95) 100%);
+
+                body{
+
+                    background-image: url("../../1_Sources/4_Images/21_Fond.png");
+
+                    main{
+            
+                        nav{
+
+                            .btn{
+
+                                color:#131515;
+                                background-image:url("../../1_Sources/4_Images/4_BrushBlanche.png");
+
+                            }
+                        
+                        }
+
+                        h1{
+
+                            color:#131515;
+                            text-shadow:5px 5px#A2D2FF;
+                
+                        }
+
+                        section{
+
+                                h3{
+
+                                    color:#131515;
+                        
+                                }
+
+                                p{
+
+                                    color:#131515;
+                        
+                                }
+                        }
+
+                        footer{
+
+                            color:#131515;
+                            background-image:url("../../1_Sources/4_Images/6_BrushBlanche.png");
+
+                            h4{
+
+                                color:#131515;
+                    
+                            }
+                        
+                        }
+
+                    }
+
+                }
+
+            }
+
+            section{
+
+                height:1200px;
                 position:absolute;
+                z-index:1;
+
+                article{
+
+                    display:flex;
+                    justify-content:center;
+                    align-items:center;
+                    flex-flow:wrap row;
+
+                    canvas{
+
+                        min-width:50%;
+                        min-height:75%;
+                        max-width:50%;
+                        max-height:75%;
+                        margin-left:15%;
+
+                    }
+
+                }
+
+                h3{
+
+                    text-align:center;
+                    color:#faf9f9;
+                    font-family:"Hashiba";
+                    font-size:4REM;
+                    margin-top:-8%;
+                    margin-bottom:5%;
+                    margin-left:35%;
+                    margin-right:5%;
+                    position:absolute;
+
+                }
+
+                p{
+
+                    text-align:center;
+                    color:#faf9f9;
+                    font-family:"MPLUSRounded1C Light";
+                    font-size:1.5REM;
+                    padding: 2.5% 25%;
+
+                }
 
             }
 
-            p{
+            footer{
 
-                text-align:center;
-                color:#faf9f9;
-                font-family:"MPLUSRounded1C Light";
-                font-size:1.5REM;
-                padding: 2.5% 25%;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                width:25%;
+                height:75px;
+                margin-left:75%;
+                bottom:0;
+                position:absolute;
+                border-top-left-radius:37.5px 37.5px;
+                background-image:url("../../1_Sources/4_Images/9_BrushBleue.png");
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-color:transparent;
 
-            }
+                h4{
 
-        }
+                    text-align:center;
+                    color:#FAF9F9;
+                    font-family:"MPLUSRounded1C Light";
+                    font-size:1.5REM;
 
-        footer{
-
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            width:25%;
-            height:75px;
-            margin-left:75%;
-            bottom:0;
-            position:absolute;
-            border-top-left-radius:37.5px 37.5px;
-            background-image:url("../../1_Sources/4_Images/9_BrushBleue.png");
-            background-repeat:no-repeat;
-            background-size:cover;
-            background-color:transparent;
-
-            h4{
-
-                text-align:center;
-                color:#FAF9F9;
-                font-family:"MPLUSRounded1C Light";
-                font-size:1.5REM;
+                }
 
             }
 
         }
 
     }
+
 }
 
 /*Couleurs*/
