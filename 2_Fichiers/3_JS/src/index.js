@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	'use strict';
 	// FEUR
+	// FEUR
 	var page = 1;
 
 
@@ -374,6 +375,9 @@ document.addEventListener('DOMContentLoaded', function () {
 				labels: genre,
 				datasets: [
 					{
+						label: 'Nombre',
+						data: nombre.length,
+						backgroundColor: "#a2d2ff",
 						label: genre,
 						data: [action, suspense, horreur, sport, surnaturel, fantasy, drama, comedie, mystere, tranche, aventure, romance, science],
 						backgroundColor: ['red', 'green', 'blue', 'gold', 'purple', 'pink', 'blueviolet', 'chocolate', 'brown', 'orange', 'yellow', 'silver', 'hotpink'],

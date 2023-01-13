@@ -1,20 +1,22 @@
 @import url("./webfont.css");
 html {
   overflow-x: hidden;
-  background-color: #000000;
-  height: 1500px;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  background-image: linear-gradient(-135deg, #131515 0%, hsla(180deg, 5%, 8%, 0.95) 100%);
+  background-blend-mode: multiply, multiply;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 html * {
   transition: left 1s ease, right 1s ease, color 1s ease, background-image 1s ease, text-shadow 1s ease;
 }
-
-body {
-  background-image: linear-gradient(-135deg, #131515 0%, hsla(180deg, 5%, 8%, 0.75) 100%);
+html body {
+  background-image: url("../../1_Sources/4_Images/19_Fond.png");
   background-blend-mode: multiply, multiply;
   background-repeat: no-repeat;
+  background-size: contain;
   font-family: "Hashiba";
   color: #faf9f9;
   font-size: 1.5REM;
@@ -23,24 +25,12 @@ body {
   padding: 0;
   margin: 0;
 }
-body main {
+html body main {
   height: 1500px;
   margin-bottom: 0%;
   z-index: 0;
-  /* body main h2{
-
-      text-align:end;
-      color:#faf9f9;
-      font-family:"MPLUSRounded1C Medium";
-      font-size:2REM;
-      margin-top:2.5%;
-      margin-bottom:5%;
-      margin-right:2.5%;
-      text-shadow:5px 5px hsla(209, 100%, 82%, 0.5);
-
-  } */
 }
-body main nav {
+html body main nav {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -52,7 +42,7 @@ body main nav {
   position: fixed;
   z-index: 2;
 }
-body main nav .btn {
+html body main nav .btn {
   background-image: url("../../1_Sources/4_Images/7_BrushBleue.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,150 +57,166 @@ body main nav .btn {
   transition: transform 0.25s ease, background-image 0.5s ease;
   cursor: pointer;
 }
-body main nav #Premier:hover {
+html body main nav #Premier:hover {
   transform: scale(1.25);
   background-image: url("../../1_Sources/4_Images/10_BrushViolette.png");
 }
-body main nav #Deuxieme:hover {
+html body main nav #Deuxieme:hover {
   transform: scale(1.25);
   background-image: url("../../1_Sources/4_Images/13_BrushJaune.png");
 }
-body main nav #Troisieme:hover {
+html body main nav #Troisieme:hover {
   transform: scale(1.25);
   background-image: url("../../1_Sources/4_Images/16_BrushRouge.png");
 }
-body main h1 {
-  text-align: end;
+html body main h1 {
+  background-image: url("../../1_Sources/4_Images/8_BrushBleue.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 25vh;
+  width: 125vw;
+  text-align: center;
   color: #faf9f9;
+  width: 25%;
   font-size: 5REM;
-  margin-top: 2.5%;
   margin-bottom: 2.5%;
+  margin-left: 72.5%;
   margin-right: 2.5%;
   text-shadow: 5px 5px #131515;
 }
-body main .droite {
+html body main .droite {
   width: 100%;
   left: 110%;
   transition: left 1s ease, right 1s ease;
 }
-body main .gauche {
+html body main .gauche {
   width: 100%;
   left: -110%;
 }
-body main .centre {
+html body main .centre {
   width: 100%;
   left: 0%;
   right: 0%;
 }
-body main .premier {
-  background-image: linear-gradient(-135deg, #131515 0%, hsla(180deg, 5%, 8%, 0.5) 100%);
+html body main .Noir {
+  background-image: linear-gradient(-135deg, #131515 0%, hsla(180deg, 5%, 8%, 0.95) 100%);
 }
-body main .premier .btn {
+html body main .Noir body {
+  background-image: url("../../1_Sources/4_Images/19_Fond.png");
+}
+html body main .Noir body main nav .btn {
   color: #FAF9F9;
   background-image: url("../../1_Sources/4_Images/7_BrushBleue.png");
 }
-body main .premier h1 {
-  color: #ad2a2a;
+html body main .Noir body main h1 {
+  color: #FAF9F9;
   text-shadow: 5px 5px #131515;
 }
-body main .premier h3 {
+html body main .Noir body main section h3 {
   color: #FAF9F9;
 }
-body main .premier p {
+html body main .Noir body main section p {
   color: #FAF9F9;
 }
-body main .premier footer {
+html body main .Noir body main footer {
   color: #FAF9F9;
   background-image: url("../../1_Sources/4_Images/9_BrushBleue.png");
 }
-body main .premier h4 {
+html body main .Noir body main footer h4 {
   color: #FAF9F9;
 }
-body main .deuxieme {
-  background-image: linear-gradient(-135deg, #FAF9F9 0%, hsla(0deg, 9%, 98%, 0.75) 100%);
+html body main .Blanc {
+  background-image: linear-gradient(-135deg, #FAF9F9 0%, hsla(0deg, 9%, 98%, 0.95) 100%);
 }
-body main .deuxieme .btn {
+html body main .Blanc body {
+  background-image: url("../../1_Sources/4_Images/20_Fond.png");
+}
+html body main .Blanc body main nav .btn {
   color: #A2D2FF;
   background-image: url("../../1_Sources/4_Images/1_BrushNoire.png");
 }
-body main .deuxieme h1 {
+html body main .Blanc body main h1 {
   color: #A2D2FF;
   text-shadow: 5px 5px #FAF9F9;
 }
-body main .deuxieme h3 {
+html body main .Blanc body main section h3 {
   color: #A2D2FF;
 }
-body main .deuxieme p {
+html body main .Blanc body main section p {
   color: #A2D2FF;
 }
-body main .deuxieme footer {
+html body main .Blanc body main footer {
   color: #A2D2FF;
   background-image: url("../../1_Sources/4_Images/3_BrushNoire.png");
 }
-body main .deuxieme h4 {
+html body main .Blanc body main footer h4 {
   color: #A2D2FF;
 }
-body main .troisieme {
-  background-image: linear-gradient(-135deg, #A2D2FF 0%, hsla(209deg, 100%, 82%, 0.5) 100%);
+html body main .Bleu {
+  background-image: linear-gradient(-135deg, #A2D2FF 0%, hsla(209deg, 100%, 82%, 0.95) 100%);
 }
-body main .troisieme .btn {
+html body main .Bleu body {
+  background-image: url("../../1_Sources/4_Images/21_Fond.png");
+}
+html body main .Bleu body main nav .btn {
   color: #131515;
   background-image: url("../../1_Sources/4_Images/4_BrushBlanche.png");
 }
-body main .troisieme h1 {
+html body main .Bleu body main h1 {
   color: #131515;
   text-shadow: 5px 5px #A2D2FF;
 }
-body main .troisieme h3 {
+html body main .Bleu body main section h3 {
   color: #131515;
 }
-body main .troisieme p {
+html body main .Bleu body main section p {
   color: #131515;
 }
-body main .troisieme footer {
+html body main .Bleu body main footer {
   color: #131515;
   background-image: url("../../1_Sources/4_Images/6_BrushBlanche.png");
 }
-body main .troisieme h4 {
+html body main .Bleu body main footer h4 {
   color: #131515;
 }
-body main section {
+html body main section {
   height: 1200px;
   position: absolute;
   z-index: 1;
 }
-body main section article {
+html body main section article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: wrap row;
 }
-body main section article canvas {
+html body main section article canvas {
   min-width: 50%;
   min-height: 75%;
   max-width: 50%;
   max-height: 75%;
   margin-left: 15%;
 }
-body main section h3 {
+html body main section h3 {
   text-align: center;
   color: #faf9f9;
   font-family: "Hashiba";
   font-size: 4REM;
-  margin-top: -4%;
+  margin-top: -8%;
   margin-bottom: 5%;
   margin-left: 35%;
   margin-right: 5%;
   position: absolute;
 }
-body main section p {
+html body main section p {
   text-align: center;
   color: #faf9f9;
   font-family: "MPLUSRounded1C Light";
   font-size: 1.5REM;
   padding: 2.5% 25%;
 }
-body main footer {
+html body main footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,7 +231,7 @@ body main footer {
   background-size: cover;
   background-color: transparent;
 }
-body main footer h4 {
+html body main footer h4 {
   text-align: center;
   color: #FAF9F9;
   font-family: "MPLUSRounded1C Light";
