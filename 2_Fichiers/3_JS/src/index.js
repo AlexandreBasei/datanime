@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('centre');
 			$("#section3").addClass('centre');
 			$("#section3").removeClass('droite');
-			$("body").addClass('troisieme');
-			$("body").removeClass('deuxieme');
+			$("html").addClass('troisieme');
+			$("html").removeClass('deuxieme');
 			window.scrollTo(0, 0);
 			page = 3;
 		}
@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").hide();
 			$("#section2").addClass('gauche');
 			$("#section2").removeClass('droite');
-			$("body").addClass('troisieme');
-			$("body").removeClass('premier');
+			$("html").addClass('troisieme');
+			$("html").removeClass('premier');
 			window.scrollTo(0, 0);
 			page = 3;
 		}
@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section3").addClass('droite');
 			$("#section2").addClass('centre');
 			$("#section2").removeClass('gauche');
-			$("body").addClass('deuxieme');
-			$("body").removeClass('troisieme');
+			$("html").addClass('deuxieme');
+			$("html").removeClass('troisieme');
 			window.scrollTo(0, 0);
 			page = 2;
 		}
@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('gauche');
 			$("#section1").addClass('gauche');
 			$("#section1").removeClass('centre');
-			$("body").addClass('deuxieme');
-			$("body").removeClass('premier');
+			$("html").addClass('deuxieme');
+			$("html").removeClass('premier');
 			window.scrollTo(0, 0);
 			page = 2;
 		}
@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('gauche');
 			$("#section1").addClass('centre');
 			$("#section1").removeClass('gauche');
-			$("body").addClass('premier');
-			$("body").removeClass('troisieme');
+			$("html").addClass('premier');
+			$("html").removeClass('troisieme');
 			window.scrollTo(0, 0);
 			page = 1;
 		}
@@ -88,8 +88,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			$("#section2").removeClass('centre');
 			$("#section1").addClass('centre');
 			$("#section1").removeClass('gauche');
-			$("body").addClass('premier');
-			$("body").removeClass('deuxieme');
+			$("html").addClass('premier');
+			$("html").removeClass('deuxieme');
 			window.scrollTo(0, 0);
 			page = 1;
 		}
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	var ranking = [];
 	var labels = [];
 	var chart = '';
-	
+
 	var settings1 = {
 		"async": true,
 		"crossDomain": true,
@@ -121,13 +121,16 @@ document.addEventListener('DOMContentLoaded', function () {
 		ranking = [];
 		labels = [];
 
-			response['data'].forEach(element => {
-				ranking.push(element['ranking']);
-			});
+		response['data'].forEach(element => {
+			ranking.push(element['ranking']);
+		});
 
-			response['data'].forEach(element => {
-				labels.push(element['title']);
-			});
+		response['data'].forEach(element => {
+			labels.push(element['title']);
+		});
+
+		document.getElementById('imgtop').src = response['data'][0]['image'];
+		document.getElementById('titre').innerHTML = response['data'][0]['title'];
 
 		chart = new Chart(Graphe1, {
 			type: 'bar',
@@ -138,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					{
 						label: 'Rang',
 						data: ranking,
-						backgroundColor: ["#a2d2ff", "red", "green", "gold", "purple", "hotpink", "brown", "blue", "orange", "blueviolet"],
+						backgroundColor: ['#6247aaff','#6a47a9ff','#7247a8ff','#7b47a7ff','#8347a6ff','#8b46a5ff','#9346a4ff','#9c46a3ff','#a446a2ff','#ac46a1ff'],
 						borderWidth: 0,
 						borderRadius: 20,
 						color: 'white',
@@ -250,6 +253,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			response['data'].forEach(element => {
 				labels.push(element['title']);
 			});
+
+			document.getElementById('imgtop').src = response['data'][0]['image'];
+			document.getElementById('titre').innerHTML = response['data'][0]['title'];
 
 			chart.data.labels = labels;
 			chart.data.datasets[0].data = ranking;
@@ -376,10 +382,10 @@ document.addEventListener('DOMContentLoaded', function () {
 					{
 						label: genre,
 						data: [action, suspense, horreur, sport, surnaturel, fantasy, drama, comedie, mystere, tranche, aventure, romance, science],
-						backgroundColor: ['red', 'green', 'blue', 'gold', 'purple', 'pink', 'blueviolet', 'chocolate', 'brown', 'orange', 'yellow', 'silver', 'hotpink'],
+						backgroundColor: ['#eae151ff','#ecdf59ff','#eede61ff','#efdc69ff','#f1da71ff','#f3d979ff','#f4d782ff','#f6d58aff','#f8d492ff','#fad29aff','#fbd0a2ff','#fdcfaaff','#ffcdb2ff'],
 						// borderColor: 'white',
 						borderWidth: 1,
-						color: 'white',
+						color: 'white',						
 					},
 				],
 			},
@@ -417,9 +423,9 @@ document.addEventListener('DOMContentLoaded', function () {
 					label: "Nombre d'épisodes ",
 					data: [action2, suspense2, horreur2, sport2, surnaturel2, fantasy2, drama2, comedie2, mystere2, tranche2, aventure2, romance2, science2],
 					fill: true,
-					backgroundColor: 'rgba(255, 99, 132, 0.2)',
-					borderColor: 'rgb(255, 99, 132)',
-					pointBackgroundColor: ['rgb(255, 99, 132)', 'blue', 'yellow', 'green', 'gold', 'silver', 'purple', 'cyan', 'orange', 'blueviolet', 'hotpink', 'bisque', 'brown'],
+					backgroundColor: 'rgba(173, 193, 120, 0.2)',
+					borderColor: 'rgb(173, 193, 120)',
+					pointBackgroundColor: ['#a4133cff','#ab1c3fff','#b12642ff','#b82f45ff','#bf3948ff','#c5424bff','#cc4c4eff','#d35550ff','#d95e53ff','#e06856ff','#e77159ff','#ed7b5cff','#f4845fff'],
 					pointBorderColor: '#fff',
 					pointHoverBackgroundColor: '#fff',
 					pointHoverBorderColor: 'rgb(255, 99, 132)',

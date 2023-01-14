@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="fr" class="premier">
 
 <head>
 
@@ -16,107 +15,122 @@
 
 </head>
 
-<body  class="premier">
+<body>
 
     <main>
-        
+
         <nav>
 
-            <button type="button" class="btn" id="Premier">Premier</button>
-            <button type="button" class="btn" id="Deuxieme">Deuxième</button>
-            <button type="button" class="btn" id="Troisieme">Troisieme</button>
+            <button type="button" class="btn" id="Premier">Top 10 en fonction du genre</button>
+            <button type="button" class="btn" id="Deuxieme">Nombre d'animés par genre</button>
+            <button type="button" class="btn" id="Troisieme">Nombre d'épisodes par genre</button>
 
         </nav>
 
-    <h1>DatAnimes</h1>
 
-    <!-- <h2>Les datavisualisation des mangas adaptés en séries d'animation</h2> -->
+        <div id="h1">
+            <h1>DatAnimes</h1>
+        </div>
 
-    <section class="centre" id="section1">
+        <!-- <h2>Les datavisualisation des mangas adaptés en séries d'animation</h2> -->
 
-        <h3>Premier</h3>
+        <section class="centre" id="section1">
 
-        <article>
+            <h3>Top 10 en fonction du genre</h3>
 
-            <label for="genre">Sélectionner un genre :</label>
-            <select name="genre" id="genre">
-                <option value="Top">Top 10</option>
-                <option value="Action">Action</option>
-                <option value="Suspense">Suspense</option>
-                <option value="Horror">Horreur</option>
-                <option value="Sports">Sports</option>
-                <option value="Supernatural">Surnaturel</option>
-                <option value="Fantasy">Fantasy</option>
-                <option value="Drama">Drame</option>
-                <option value="Comedy">Comédie</option>
-                <option value="Mystery">Mystère</option>
-                <option value="Slice of Life">Tranche de vie</option>
-                <option value="Adventure">Aventure</option>
-                <option value="Romance">Romance</option>
-                <option value="Sci-Fi">Sci-Fi</option>
-            </select>
+            <article>
 
-            <canvas id="Graphe1">
+                <div>
+                    <label for="genre">Sélectionner un genre :</label>
+                    <select name="genre" id="genre">
+                        <option value="Top">Top 10</option>
+                        <option value="Action">Action</option>
+                        <option value="Suspense">Suspense</option>
+                        <option value="Horror">Horreur</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Supernatural">Surnaturel</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Drama">Drame</option>
+                        <option value="Comedy">Comédie</option>
+                        <option value="Mystery">Mystère</option>
+                        <option value="Slice of Life">Tranche de vie</option>
+                        <option value="Adventure">Aventure</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                    </select><br>
+                    <h2>Top 1 de ce genre :</h2>
+                    <img id="imgtop" src="" alt="couverture du top 1">
+                    <h2 id="titre"></h2>
+                </div>
 
-            </canvas>
-          
-            <p>
-                Le texte relatif au graphe sera présent ici
-            </p>
+                <canvas id="Graphe1">
 
-        </article>
+                </canvas>
 
-    </section>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla <br> aperiam iusto veritatis, ipsa voluptatibus deserunt corporis! Qui <br>
+                    iure vero maiores iste aut! Praesentium in eum nobis quo! Sit, quos <br>
+                    velit? 
+                </p>
 
-    <section class="droite" id="section2">
+            </article>
 
-        <h3>Deuxieme</h3>
+        </section>
 
-        <article>
+        <section class="droite" id="section2">
 
-            <canvas id="Graphe2">
-                
-            </canvas>
-        
-            <p>
-                Le texte relatif au graphe sera présent ici
-            </p>
+            <h3>Nombre d'animés par genre</h3>
 
-        </article>
+            <article>
 
-    </section>
+                <canvas id="Graphe2">
 
-    <section class="droite" id="section3">
+                </canvas>
 
-        <h3>Troisieme</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla <br> aperiam iusto veritatis, ipsa voluptatibus deserunt corporis! Qui <br>
+                    iure vero maiores iste aut! Praesentium in eum nobis quo! Sit, quos <br>
+                    velit? 
+                </p>
 
-        <article>
+            </article>
 
-            <canvas id="Graphe3">
-                
-            </canvas>
-                            
-            <p>
-                Le texte relatif au graphe sera présent ici
-            </p>
+        </section>
 
-        </article>
+        <section class="droite" id="section3">
 
-    </section>
+            <h3>Nombre d'épisodes par genre</h3>
 
-    <footer>
+            <article>
 
-        <h4>Chaker & Alexandre</h4>
+                <canvas id="Graphe3">
 
-    </footer>
+                </canvas>
 
-</main>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla <br> aperiam iusto veritatis, ipsa voluptatibus deserunt corporis! Qui <br>
+                    iure vero maiores iste aut! Praesentium in eum nobis quo! Sit, quos <br>
+                    velit?
+                </p>
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+            </article>
+
+        </section>
+
+        <footer>
+
+            <h4>Chaker & Alexandre</h4>
+
+        </footer>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="../3_JS/vendor/chart-utils.min.js"></script>
     <script src="../3_JS/vendor/chart.min.js"></script>
     <script src="../3_JS/src/index.js"></script>
-    
+
 </body>
 
 </html>

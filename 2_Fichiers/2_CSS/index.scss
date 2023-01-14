@@ -1,106 +1,108 @@
-
 @import url("./webfont.css");
 
-html{
+html {
 
-    overflow-x:hidden;
-    background-color:#000000;
-    height:1500px;
-    padding:0;
-    margin:0;
-    scroll-behavior:smooth;
-    
-    *{
+    overflow-x: hidden;
+    background-color: #000000;
+    height: 1500px;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: background-image 1s ease, background-color 1s ease;
+
+    * {
         transition: left 1s ease, right 1s ease, color 1s ease, background-image 1s ease, text-shadow 1s ease;
     }
 
 }
 
-body{
+body {
 
-    background-image:linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.75) 100%);
-    background-blend-mode:multiply, multiply;
-    background-repeat:no-repeat;
-    font-family:"Hashiba";
-    color:#faf9f9;
-    font-size:1.5REM;
-    height:1500px;
-    position:relative;
-    padding:0;
-    margin:0;
+    background-image: url('../..//1_Sources/4_Images/19_Fond.png');
+    background-blend-mode: multiply, multiply;
+    background-repeat: no-repeat;
+    font-family: "Hashiba";
+    color: #faf9f9;
+    font-size: 1.5REM;
+    height: 1500px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    transition: background-image 1s ease;
 
-    main{
+    main {
 
-        height:1500px;
-        margin-bottom:0%;
-        z-index:0;
+        height: 1500px;
+        margin-bottom: 0%;
+        // z-index: 0;
 
-        nav{
+        nav {
 
-        display:flex;
-        justify-content:start;
-        align-items:center;
-        flex-flow:column wrap;
-        gap:10%;
-        padding-top:5%;
-        padding-left:7.5%;
-        height:1000px;
-        position:fixed;
-        z-index:2;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-flow: column wrap;
+            gap: 10%;
+            padding-top: 5%;
+            padding-left: 7.5%;
+            height: 1000px;
+            position: fixed;
+            z-index: 5;
 
-            .btn{
+            .btn {
 
-            background-image:url("../../1_Sources/4_Images/7_BrushBleue.png");
-            background-repeat:no-repeat;
-            background-size:cover;
-            background-color:transparent;
-            color:#faf9f9;
-            font-family:"MPLUSRounded1C Medium";
-            font-size:2REM;
-            width:250px;
-            padding:10%;
-            border:none;
-            border-radius:15px;
-            transition: transform 0.25s ease, background-image 0.5s ease;
-            cursor:pointer;
-
-            }
-
-            #Premier:hover{
-
-                transform:scale(1.25);
-                background-image:url("../../1_Sources/4_Images/10_BrushViolette.png");
+                background-image: url("../../1_Sources/4_Images/7_BrushBleue.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: transparent;
+                color: #faf9f9;
+                font-family: "MPLUSRounded1C Medium";
+                font-size: 2REM;
+                width: 250px;
+                padding: 10% 15% 15% 10%;
+                border: none;
+                border-radius: 15px;
+                transition: transform 0.25s ease, background-image 0.5s ease;
+                cursor: pointer;
 
             }
 
-            #Deuxieme:hover{
-                
-                transform:scale(1.25);
-                background-image:url("../../1_Sources/4_Images/13_BrushJaune.png");
+            #Premier:hover {
+
+                transform: scale(1.15);
+                background-image: url("../../1_Sources/4_Images/10_BrushViolette2.png");
 
             }
 
-            #Troisieme:hover{
-                
-                transform:scale(1.25);
-                background-image:url("../../1_Sources/4_Images/16_BrushRouge.png");
+            #Deuxieme:hover {
+
+                transform: scale(1.15);
+                background-image: url("../../1_Sources/4_Images/13_BrushJaune2.png");
+
+            }
+
+            #Troisieme:hover {
+
+                transform: scale(1.15);
+                background-image: url("../../1_Sources/4_Images/16_BrushRouge2.png");
 
             }
         }
 
-        h1{
+        h1 {
 
-            text-align:end;
-            color:#faf9f9;
-            font-size:5REM;
-            margin-top:2.5%;
-            margin-bottom:2.5%;
-            margin-right:2.5%;
-            text-shadow:5px 5px#131515;
+            text-align: end;
+            color: #faf9f9;
+            font-size: 5REM;
+            margin-top: 0;
+            padding-top: 2.5%;
+            margin-bottom: 2.5%;
+            margin-right: 2.5%;
+            text-shadow: 5px 5px#131515;
 
         }
 
-/* body main h2{
+        /* body main h2{
 
     text-align:end;
     color:#faf9f9;
@@ -113,247 +115,309 @@ body{
 
 } */
 
-        .droite{
+        .droite {
 
-            width:100%;
-            left:110%;
+            width: 100%;
+            left: 110%;
             transition: left 1s ease, right 1s ease;
 
         }
 
-        .gauche{
+        .gauche {
 
-            width:100%;
-            left:-110%;
-
-        }
-
-        .centre{
-
-            width:100%;
-            left:0%;
-            right:0%;
+            width: 100%;
+            left: -110%;
 
         }
 
-        .premier{
-                
-                background-image:linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.5) 100%);
+        .centre {
 
-
-            .btn{
-
-                color:#FAF9F9;
-                background-image:url("../../1_Sources/4_Images/7_BrushBleue.png");
-
-            }
-
-            h1{
-
-                color:#ad2a2a;
-                text-shadow:5px 5px#131515;
-
-            }
-
-            h3{
-
-                color:#FAF9F9;
-
-            }
-
-            p{
-
-                color:#FAF9F9;
-
-            }
-
-            footer{
-
-                color:#FAF9F9;
-                background-image:url("../../1_Sources/4_Images/9_BrushBleue.png");
-
-            }
-
-            h4{
-
-                color:#FAF9F9;
-
-            }
+            width: 100%;
+            left: 0%;
+            right: 0%;
 
         }
 
-        .deuxieme{
-                
-                background-image:linear-gradient(-135deg, #FAF9F9 0%, hsla(0, 9%, 98%, 0.75) 100%);
+        section {
 
+            height: 1200px;
+            position: absolute;
+            // z-index: 1;
 
-            .btn{
+            article {
 
-                color:#A2D2FF;
-                background-image:url("../../1_Sources/4_Images/1_BrushNoire.png");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: wrap row-reverse;
+                gap: 2%;
 
-            }
+                div {
+                    margin-left: 50px;
+                    display: flex;
+                    flex-flow: wrap column;
+                    justify-content: center;
+                    align-items: center;
 
-            h1{
+                    label {
+                        margin-bottom: 10px;
+                    }
 
-                color:#A2D2FF;
-                text-shadow:5px 5px#FAF9F9;
-    
-            }
+                    h2 {
+                        // color: white;
+                        margin: 20px 0 20px 0;
+                        padding: 0;
+                    }
 
-            h3{
+                    img {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
 
-                color:#A2D2FF;
-    
-            }
-
-            p{
-
-                color:#A2D2FF;
-    
-            }
-
-            footer{
-
-                color:#A2D2FF;
-                background-image:url("../../1_Sources/4_Images/3_BrushNoire.png");
-    
-            }
-
-            h4{
-
-                color:#A2D2FF;
-    
-            }
-
-        }
-
-        .troisieme{
-                
-                background-image:linear-gradient(-135deg, #A2D2FF 0%, hsla(209, 100%, 82%, 0.50) 100%);
-
-
-            .btn{
-
-                color:#131515;
-                background-image:url("../../1_Sources/4_Images/4_BrushBlanche.png");
-
-            }
-
-            h1{
-
-                color:#131515;
-                text-shadow:5px 5px#A2D2FF;
-    
-            }
-
-            h3{
-
-                color:#131515;
-    
-            }
-
-            p{
-
-                color:#131515;
-    
-            }
-
-            footer{
-
-                color:#131515;
-                background-image:url("../../1_Sources/4_Images/6_BrushBlanche.png");
-    
-            }
-
-            h4{
-
-                color:#131515;
-    
-            }
-
-        }
-
-        section{
-
-            height:1200px;
-            position:absolute;
-            z-index:1;
-
-            article{
-
-                display:flex;
-                justify-content:center;
-                align-items:center;
-                flex-flow:wrap row;
-
-                canvas{
+                canvas {
 
                     // background-color:red;
-                    min-width:50%;
-                    min-height:75%;
-                    max-width:50%;
-                    max-height:75%;
-                    margin-left:15%;
+                    min-width: 50%;
+                    min-height: 75%;
+                    max-width: 50%;
+                    max-height: 75%;
+                    margin-left: 15%;
 
                 }
 
             }
 
-            h3{
+            h3 {
 
-                text-align:center;
-                color:#faf9f9;
-                font-family:"Hashiba";
-                font-size:4REM;
-                margin-top:-4%;
-                margin-bottom:5%;
-                margin-left:35%;
-                margin-right:5%;
-                position:absolute;
+                text-align: center;
+                color: #faf9f9;
+                font-family: "Hashiba";
+                font-size: 4REM;
+                margin-top: -4%;
+                margin-bottom: 5%;
+                margin-left: 35%;
+                margin-right: 5%;
+                position: absolute;
 
             }
 
-            p{
+            p {
 
-                text-align:center;
-                color:#faf9f9;
-                font-family:"MPLUSRounded1C Light";
-                font-size:1.5REM;
-                padding: 2.5% 25%;
+                text-align: center;
+                color: #faf9f9;
+                font-family: "MPLUSRounded1C Light";
+                font-size: 1.5REM;
+                // background-color: red;
+                filter: drop-shadow(0px 0px 5px #000);
+                padding: 10% 15% 5% 15%;
+                background-image: url('../../1_Sources/4_Images/0_Bulle.png');
+                background-size: cover;
+                background-repeat: no-repeat;
 
             }
 
         }
 
-        footer{
+        footer {
 
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            width:25%;
-            height:75px;
-            margin-left:75%;
-            bottom:0;
-            position:absolute;
-            border-top-left-radius:37.5px 37.5px;
-            background-image:url("../../1_Sources/4_Images/9_BrushBleue.png");
-            background-repeat:no-repeat;
-            background-size:cover;
-            background-color:transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            height: 75px;
+            margin-left: 75%;
+            bottom: 0;
+            position: absolute;
+            border-top-left-radius: 37.5px 37.5px;
+            background-image: url("../../1_Sources/4_Images/9_BrushBleue.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: transparent;
 
-            h4{
+            h4 {
 
-                text-align:center;
-                color:#FAF9F9;
-                font-family:"MPLUSRounded1C Light";
-                font-size:1.5REM;
+                text-align: center;
+                color: #FAF9F9;
+                font-family: "MPLUSRounded1C Light";
+                font-size: 1.5REM;
 
             }
 
         }
 
     }
+}
+
+.premier {
+
+    background-image: linear-gradient(-135deg, #131515 0%, hsla(180, 5%, 8%, 0.5) 100%);
+    transition: background-image 1s ease, background-color 1s ease;
+
+    body {
+        background-image: url('../..//1_Sources/4_Images/19_Fond.png');
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .btn {
+
+        color: #FAF9F9;
+        line-height: 1;
+        background-image: url("../../1_Sources/4_Images/7_BrushBleue.png");
+        background-size: contain;
+
+    }
+
+    h1 {
+
+        // color: #faf9f9;
+        color: #A2D2FF;
+        text-shadow: 5px 5px#ffffff;
+        z-index: 2;
+        position: relative;
+    }
+
+    h3 {
+
+        // color: #FAF9F9;
+        color: #A2D2FF;
+
+    }
+
+    p {
+
+        // color: #FAF9F9;
+        color: #131515;
+
+    }
+
+    footer {
+
+        color: #FAF9F9;
+        background-image: url("../../1_Sources/4_Images/9_BrushBleue.png");
+
+    }
+
+    h4 {
+
+        color: #FAF9F9;
+
+    }
+
+}
+
+.deuxieme {
+
+    background-image: linear-gradient(-135deg, #FAF9F9 0%, hsla(0, 9%, 98%, 0.75) 100%);
+    transition: background-image 1s ease, background-color 1s ease;
+
+    body {
+        background-image: url('../..//1_Sources/4_Images/20_Fond.png');
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .btn {
+
+        color: #ffffff;
+        line-height: 1;
+        background-image: url("../../1_Sources/4_Images/1_BrushNoire2.png");
+        background-size: contain;
+
+    }
+
+    h1 {
+
+        color: #131515;
+        text-shadow: 5px 5px#969696;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    h3 {
+
+        color: #131515;
+
+    }
+
+    p {
+
+        color: #131515;
+
+    }
+
+    footer {
+
+        color: #A2D2FF;
+        background-image: url("../../1_Sources/4_Images/3_BrushNoire.png");
+
+    }
+
+    h4 {
+
+        color: #A2D2FF;
+
+    }
+
+}
+
+.troisieme {
+
+    background-image: linear-gradient(-135deg, #A2D2FF 0%, hsla(209, 100%, 82%, 0.50) 100%);
+    transition: background-image 1s ease, background-color 1s ease;
+
+    body {
+        background-image: url('../..//1_Sources/4_Images/21_Fond.png');
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .btn {
+
+        color: #131515;
+        line-height: 1;
+        background-image: url("../../1_Sources/4_Images/4_BrushBlanche2.png");
+        background-size: contain;
+
+    }
+
+    h1 {
+
+        // color: #131515;
+        color: #FAF9F9;
+        text-shadow: 5px 5px#000000;
+
+    }
+
+    h3 {
+
+        // color: #131515;
+        color: #FAF9F9;
+
+    }
+
+    p {
+
+        // color: #131515;
+        color: #131515;
+
+    }
+
+    footer {
+
+        color: #131515;
+        background-image: url("../../1_Sources/4_Images/6_BrushBlanche.png");
+
+    }
+
+    h4 {
+
+        color: #131515;
+
+    }
+
 }
 
 /*Couleurs*/
