@@ -109,8 +109,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		"url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10",
 		"method": "GET",
 		"headers": {
-			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
+			// "X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
 			// "X-RapidAPI-Key": "413494542fmsh37e255b3fc7392cp19f59ejsn92264c7d882c",
+			"X-RapidAPI-Key": "821aacf244mshb8be1c42b80e388p1c48d2jsn7523257d3e56",
 			"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
 		}
 	}
@@ -150,9 +151,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 			options: {
 				// indexAxis: 'y',
-				legend: {
-					display: false,
-				},
 				scales: {
 					x: {
 						ticks: [{
@@ -236,8 +234,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			"url": "https://anime-db.p.rapidapi.com/anime?page=1&size=10" + url,
 			"method": "GET",
 			"headers": {
-				"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
+				// "X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
 				// "X-RapidAPI-Key": "413494542fmsh37e255b3fc7392cp19f59ejsn92264c7d882c",
+				"X-RapidAPI-Key": "821aacf244mshb8be1c42b80e388p1c48d2jsn7523257d3e56",
 				"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
 			}
 		}
@@ -269,8 +268,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		"url": "https://anime-db.p.rapidapi.com/anime?page=1&size=30000",
 		"method": "GET",
 		"headers": {
-			"X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
+			// "X-RapidAPI-Key": "d8c4835dbfmshe28f6af9702c0b2p1441d5jsnaeb2ffc66cfa",
 			// "X-RapidAPI-Key": "413494542fmsh37e255b3fc7392cp19f59ejsn92264c7d882c",
+			"X-RapidAPI-Key": "821aacf244mshb8be1c42b80e388p1c48d2jsn7523257d3e56",
 			"X-RapidAPI-Host": "anime-db.p.rapidapi.com"
 		}
 	};
@@ -382,10 +382,10 @@ document.addEventListener('DOMContentLoaded', function () {
 					{
 						label: genre,
 						data: [action, suspense, horreur, sport, surnaturel, fantasy, drama, comedie, mystere, tranche, aventure, romance, science],
-						backgroundColor: ['#eae151ff','#ecdf59ff','#eede61ff','#efdc69ff','#f1da71ff','#f3d979ff','#f4d782ff','#f6d58aff','#f8d492ff','#fad29aff','#fbd0a2ff','#fdcfaaff','#ffcdb2ff'],
+						backgroundColor: ['#03071e','#34073d','#370617','#6a040f','#9d0208','#d00000','#e84855','#dd2d4a','#dc2f02','#e85d04','#f48c06','#faa307','#fbb539'],
 						// borderColor: 'white',
 						borderWidth: 1,
-						color: 'white',						
+						color: 'white',		
 					},
 				],
 			},
@@ -400,8 +400,15 @@ document.addEventListener('DOMContentLoaded', function () {
 					}
 				},
 				legend: {
+					fontSize: 20,
+					font: {
+						size: 20
+					},
 					labels: {
 						color: 'white',
+						font: {
+							size: 20
+						}
 					}
 				},
 				scales: {
@@ -423,8 +430,8 @@ document.addEventListener('DOMContentLoaded', function () {
 					label: "Nombre d'épisodes ",
 					data: [action2, suspense2, horreur2, sport2, surnaturel2, fantasy2, drama2, comedie2, mystere2, tranche2, aventure2, romance2, science2],
 					fill: true,
-					backgroundColor: 'rgba(173, 193, 120, 0.2)',
-					borderColor: 'rgb(173, 193, 120)',
+					backgroundColor: 'rgba(209, 154, 102,0.5)',
+					borderColor: 'rgb(209, 154, 102)',
 					pointBackgroundColor: ['#a4133cff','#ab1c3fff','#b12642ff','#b82f45ff','#bf3948ff','#c5424bff','#cc4c4eff','#d35550ff','#d95e53ff','#e06856ff','#e77159ff','#ed7b5cff','#f4845fff'],
 					pointBorderColor: '#fff',
 					pointHoverBackgroundColor: '#fff',
@@ -432,23 +439,27 @@ document.addEventListener('DOMContentLoaded', function () {
 				}]
 			},
 			options: {
-				color: 'white',
+				color: 'black',
 				scales: {
 					r: {
 						angleLines: {
-							color: 'CadetBlue'
+							color: 'black'
 						},
 						grid: {
-							color: 'CadetBlue',
+							color: 'black',
 							opacity: 0.5
 						},
 						ticks: {
-							color: 'white',
+							color: 'black',
 							backdropColor: 'transparent'
 							// display: false
 						},
 						pointLabels: {
-							color: 'white'
+							color: 'black',
+							fontStyle: 'bold',
+							font: {
+								size: 30
+							}
 						}
 					},
 					y: {

@@ -2,7 +2,7 @@
 html {
   overflow-x: hidden;
   background-color: #000000;
-  height: 1500px;
+  height: 2000px;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -19,27 +19,15 @@ body {
   font-family: "Hashiba";
   color: #faf9f9;
   font-size: 1.5REM;
-  height: 1500px;
+  height: 2000px;
   position: relative;
   padding: 0;
   margin: 0;
   transition: background-image 1s ease;
 }
 body main {
-  height: 1500px;
+  height: 2000px;
   margin-bottom: 0%;
-  /* body main h2{
-
-      text-align:end;
-      color:#faf9f9;
-      font-family:"MPLUSRounded1C Medium";
-      font-size:2REM;
-      margin-top:2.5%;
-      margin-bottom:5%;
-      margin-right:2.5%;
-      text-shadow:5px 5px hsla(209, 100%, 82%, 0.5);
-
-  } */
 }
 body main nav {
   display: flex;
@@ -49,7 +37,7 @@ body main nav {
   gap: 10%;
   padding-top: 5%;
   padding-left: 4%;
-  height: 1000px;
+  height: 100vh;
   position: fixed;
   z-index: 5;
 }
@@ -105,7 +93,6 @@ body main .centre {
   right: 0%;
 }
 body main section {
-  height: 1200px;
   position: absolute;
 }
 body main section article {
@@ -115,7 +102,7 @@ body main section article {
   flex-flow: wrap row-reverse;
   gap: 6%;
 }
-body main section article div {
+body main section article #filtre {
   display: flex;
   flex-flow: wrap column;
   justify-content: center;
@@ -126,23 +113,37 @@ body main section article div {
   padding: 1.5%;
   color: rgba(23, 23, 23, 0.884);
 }
-body main section article div label {
+body main section article #filtre label {
   margin-bottom: 10px;
 }
-body main section article div h2 {
+body main section article #filtre h2 {
   margin: 20px 0 20px 0;
   padding: 0;
 }
-body main section article div img {
+body main section article #filtre #titre {
+  font-size: 0.9em;
+}
+body main section article #filtre img {
   margin: 0;
   padding: 0;
 }
-body main section article canvas {
-  min-width: 50%;
-  min-height: 75%;
+body main section article #Graphe1 {
   max-width: 50%;
-  max-height: 75%;
+  max-height: 40%;
   margin-left: 15%;
+  margin-top: 50px;
+}
+body main section article #Graphe2 {
+  max-width: 60%;
+  max-height: 50%;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+body main section article #Graphe3 {
+  max-width: 60%;
+  max-height: 50%;
+  margin-left: 10%;
+  margin-top: 30px;
 }
 body main section h3 {
   text-align: center;
@@ -161,10 +162,13 @@ body main section p {
   font-family: "MPLUSRounded1C Light";
   font-size: 1.5REM;
   filter: drop-shadow(0px 0px 5px #000);
-  padding: 10% 15% 5% 15%;
+  width: 45vw;
   background-image: url("../../1_Sources/4_Images/0_Bulle.png");
-  background-size: cover;
+  display: block;
+  background-size: contain;
   background-repeat: no-repeat;
+  padding: 8% 15% 14% 12%;
+  margin-left: 10vw;
 }
 body main footer {
   display: flex;
@@ -186,6 +190,34 @@ body main footer h4 {
   color: #FAF9F9;
   font-family: "MPLUSRounded1C Light";
   font-size: 1.5REM;
+}
+body #section2 p {
+  text-align: center;
+  color: #000000;
+  font-family: "MPLUSRounded1C Light";
+  font-size: 1.5REM;
+  filter: drop-shadow(0px 0px 5px #000);
+  width: 30vw;
+  background-image: url("../../1_Sources/4_Images/0_Bulle.png");
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8% 10% 10% 9%;
+  margin-left: 12vw;
+}
+body #section3 p {
+  text-align: center;
+  color: #000000;
+  font-family: "MPLUSRounded1C Light";
+  font-size: 1.5REM;
+  filter: drop-shadow(0px 0px 5px #000);
+  width: 30vw;
+  background-image: url("../../1_Sources/4_Images/0_Bulle.png");
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8% 8% 14% 9%;
+  margin-left: 12vw;
 }
 
 .premier {
