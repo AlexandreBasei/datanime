@@ -44,7 +44,7 @@ body {
             flex-flow: column wrap;
             gap: 10%;
             padding-top: 5%;
-            padding-left: 7.5%;
+            padding-left: 4%;
             height: 1000px;
             position: fixed;
             z-index: 5;
@@ -150,14 +150,18 @@ body {
                 justify-content: center;
                 align-items: center;
                 flex-flow: wrap row-reverse;
-                gap: 2%;
+                gap: 6%;
 
                 div {
-                    margin-left: 50px;
                     display: flex;
                     flex-flow: wrap column;
                     justify-content: center;
                     align-items: center;
+                    background-color: rgba(255, 255, 255);
+                    border-radius: 20px;
+                    box-shadow: #000 0 0 50px;
+                    padding: 1.5%;
+                    color: rgba(23, 23, 23, 0.884);
 
                     label {
                         margin-bottom: 10px;
